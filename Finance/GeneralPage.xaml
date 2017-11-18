@@ -1,0 +1,63 @@
+﻿<common:BasePage
+    x:Class="Finance.GeneralPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:common="clr-namespace:Finance.Common"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="{StaticResource PhoneChromeColor}"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <Grid
+        Background="{StaticResource PhoneChromeBrush}">
+        <phone:Pivot>
+            <phone:Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock
+                        Text="{Binding}"
+                        FontSize="{StaticResource PhoneFontSizeMedium}"
+                        FontFamily="{StaticResource PhoneFontFamilySemiBold}" />
+                </DataTemplate>
+            </phone:Pivot.HeaderTemplate>
+            <phone:PivotItem
+                Header="{Binding LocalizedResources.GeneralSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}, Converter={StaticResource CaseConverter}, ConverterParameter=Upper}">
+                <ListBox>
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <toolkit:ListPicker
+                        x:Name="LanguageListPicker"
+                        Header="{Binding LocalizedResources.LanguageNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        SelectionChanged="LanguageListPicker_OnSelectionChanged">
+                        <toolkit:ListPickerItem
+                            Content="English"
+                            Tag="en" />
+                        <toolkit:ListPickerItem
+                            Content="Français"
+                            Tag="fr" />
+                        <toolkit:ListPickerItem
+                            Content="Русский"
+                            Tag="ru" />
+                    </toolkit:ListPicker>
+                    <TextBlock
+                        x:Name="RestartTextBlock"
+                        Text="{Binding LocalizedResources.ReloadApp, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Style="{StaticResource PhoneTextSubtleStyle}"
+                        Visibility="Collapsed" />
+                </ListBox>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</common:BasePage>

@@ -1,0 +1,255 @@
+﻿<common:BasePage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:common="clr-namespace:Finance.Common"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Finance.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:model="clr-namespace:Finance.Database.Model"
+    x:Name="Page"
+    x:Class="Finance.MainPage"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <phone:Pivot
+        x:Name="MainPivot"
+        SelectionChanged="MainPivot_OnSelectionChanged">
+        <phone:Pivot.HeaderTemplate>
+            <DataTemplate>
+                <TextBlock
+                    Text="{Binding}"
+                    FontSize="{StaticResource PhoneFontSizeMedium}"
+                    FontFamily="{StaticResource PhoneFontFamilySemiBold}" />
+            </DataTemplate>
+        </phone:Pivot.HeaderTemplate>
+        <phone:PivotItem
+            Header="{Binding LocalizedResources.BalanceSmall, ConverterParameter=Upper, Converter={StaticResource CaseConverter}, Mode=OneWay, Source={StaticResource LocalizedStrings}}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <controls:TotalControl
+                    Grid.Row="0"
+                    Margin="12,0,12,12"
+                    x:Name="BalanceTotalControl"
+                    BackgroundColor="{StaticResource HeaderBackgroundBrush}"
+                    NameText="{Binding LocalizedResources.TotalNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                    CurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}" />
+                <TextBlock
+                    Grid.Row="1"
+                    x:Name="NoAccountsDataTextBlock"
+                    Text="{Binding LocalizedResources.NoDataMessage, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                    Style="{StaticResource PhoneTextSubtleStyle}" />
+                <ListBox
+                    Grid.Row="1"
+                    x:Name="AccountsListBox">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <toolkit:ContextMenuService.ContextMenu>
+                                    <toolkit:ContextMenu>
+                                        <toolkit:MenuItem
+                                            Header="{Binding LocalizedResources.EditSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                            Click="EditAccount_OnClick" />
+                                    </toolkit:ContextMenu>
+                                </toolkit:ContextMenuService.ContextMenu>
+                                <controls:AccountControl
+                                    Margin="12,0,12,12"
+                                    BackgroundColor="{StaticResource ElementBackgroundBrush}"
+                                    NameText="{Binding Name}"
+                                    AmountValue="{Binding Balance}"
+                                    CurrencyText="{Binding CurrencyCharCode}"
+                                    SmallAmountValue="{Binding CurrentBalance}"
+                                    SmallCurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}"
+                                    d:DataContext="{d:DesignInstance model:Account}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </phone:PivotItem>
+
+        <phone:PivotItem
+            Header="{Binding LocalizedResources.ExpencesSmall, ConverterParameter=Upper, Converter={StaticResource CaseConverter}, Mode=OneWay, Source={StaticResource LocalizedStrings}}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <controls:MonthControl
+                    x:Name="ExpenseMonthControl"
+                    Grid.Row="0"
+                    Margin="12,0,12,12"
+                    BackgroundColor="{StaticResource HeaderBackgroundBrush}"
+                    MonthCurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}"
+                    AverageCurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}"
+                    TodayCurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}">
+                    <controls:MonthControl.Projection>
+                        <PlaneProjection RotationX="0" />
+                    </controls:MonthControl.Projection>
+                </controls:MonthControl>
+                <Grid
+                    Grid.Row="1"
+                    x:Name="ExpenceGrid"
+                    RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <CompositeTransform TranslateX="0" />
+                    </Grid.RenderTransform>
+                    <TextBlock
+                        x:Name="NoExpenceDataTextBlock"
+                        Text="{Binding LocalizedResources.NoDataMessage, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Style="{StaticResource PhoneTextSubtleStyle}" />
+                    <ListBox
+                        x:Name="ExpenceListBox"
+                        Tap="CategoryListBox_Tap"
+                        Tag="EXPENCE">
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <controls:CategoryControl
+                                    Margin="12,0,12,12"
+                                    BackgroundColor="{StaticResource ElementBackgroundBrush}"
+                                    NameText="{Binding Name}"
+                                    AmountValue="{Binding Amount}"
+                                    CurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}"
+                                    d:DataContext="{d:DesignInstance model:Category}" />
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </Grid>
+        </phone:PivotItem>
+
+        <phone:PivotItem
+            Header="{Binding LocalizedResources.IncomesSmall, ConverterParameter=Upper, Converter={StaticResource CaseConverter}, Mode=OneWay, Source={StaticResource LocalizedStrings}}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <controls:MonthControl
+                    x:Name="IncomeMonthControl"
+                    Grid.Row="0"
+                    Margin="12,0,12,12"
+                    BackgroundColor="{StaticResource HeaderBackgroundBrush}"
+                    MonthCurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}"
+                    AverageCurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}"
+                    TodayCurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}">
+                    <controls:MonthControl.Projection>
+                        <PlaneProjection RotationX="0" />
+                    </controls:MonthControl.Projection>
+                </controls:MonthControl>
+                <Grid
+                    Grid.Row="1"
+                    x:Name="IncomeGrid"
+                    RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <CompositeTransform TranslateX="0" />
+                    </Grid.RenderTransform>
+                    <TextBlock
+                        x:Name="NoIncomesDataTextBlock"
+                        Text="{Binding LocalizedResources.NoDataMessage, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Style="{StaticResource PhoneTextSubtleStyle}" />
+                    <ListBox
+                        x:Name="IncomeListBox"
+                        Tap="CategoryListBox_Tap"
+                        Tag="INCOME">
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <controls:CategoryControl
+                                    Margin="12,0,12,12"
+                                    BackgroundColor="{StaticResource ElementBackgroundBrush}"
+                                    NameText="{Binding Name}"
+                                    AmountValue="{Binding Amount}"
+                                    CurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}"
+                                    d:DataContext="{d:DesignInstance model:Category}" />
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Grid>
+            </Grid>
+        </phone:PivotItem>
+
+        <phone:PivotItem
+            Header="{Binding LocalizedResources.DebtsSmall, ConverterParameter=Upper, Converter={StaticResource CaseConverter}, Mode=OneWay, Source={StaticResource LocalizedStrings}}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <controls:TotalControl
+                    Grid.Row="0"
+                    Margin="12,0,12,12"
+                    x:Name="DebtsTotalControl"
+                    BackgroundColor="{StaticResource HeaderBackgroundBrush}"
+                    NameText="{Binding LocalizedResources.TotalNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                    CurrencyText="{Binding CurrentCurrencyCharCode, Mode=OneWay, Source={StaticResource AppSettings}}" />
+                <TextBlock
+                    Grid.Row="1"
+                    x:Name="NoDebtsDataTextBlock"
+                    Text="{Binding LocalizedResources.NoDataMessage, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                    Style="{StaticResource PhoneTextSubtleStyle}" />
+                <ListBox
+                    Grid.Row="1"
+                    x:Name="DebtorsListBox"
+                    Tap="DebtorsListBox_OnTap">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <toolkit:ContextMenuService.ContextMenu>
+                                    <toolkit:ContextMenu>
+                                        <toolkit:MenuItem
+                                            Header="{Binding LocalizedResources.GiveSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                            Click="GiveButton_Click" />
+                                        <toolkit:MenuItem
+                                            Header="{Binding LocalizedResources.TakeSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                            Click="TakeButton_Click" />
+                                        <toolkit:MenuItem
+                                            Header="{Binding LocalizedResources.ForgetSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                            Click="ForgetButton_OnClick" />
+                                    </toolkit:ContextMenu>
+                                </toolkit:ContextMenuService.ContextMenu>
+                                <controls:PersonControl
+                                    Margin="12,0,12,12"
+                                    BackgroundColor="{StaticResource ElementBackgroundBrush}"
+                                    NameText="{Binding Name}"
+                                    AmountValue="{Binding Amount}"
+                                    CurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}"
+                                    d:DataContext="{d:DesignInstance model:Person}" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </phone:PivotItem>
+    </phone:Pivot>
+
+</common:BasePage>

@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>en</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>FINANCE+DEBTS</value>
+  </data>
+  <data name="AccountSmall" xml:space="preserve">
+    <value>account</value>
+  </data>
+  <data name="AccountsSmall" xml:space="preserve">
+    <value>accounts</value>
+  </data>
+  <data name="AddSmall" xml:space="preserve">
+    <value>add</value>
+  </data>
+  <data name="BalanceNormal" xml:space="preserve">
+    <value>Balance</value>
+  </data>
+  <data name="CancelSmall" xml:space="preserve">
+    <value>cancel</value>
+  </data>
+  <data name="DeleteSmall" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="EditSmall" xml:space="preserve">
+    <value>edit</value>
+  </data>
+  <data name="IncomesSmall" xml:space="preserve">
+    <value>incomes</value>
+  </data>
+  <data name="NameNormal" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="SaveSmall" xml:space="preserve">
+    <value>save</value>
+  </data>
+  <data name="AccountDeleteMessageText" xml:space="preserve">
+    <value>Are you sure you want to delete the account?</value>
+  </data>
+  <data name="AccountDeleteMessageTitle" xml:space="preserve">
+    <value>DELETE?</value>
+  </data>
+  <data name="AccountNameEmptyMessageText" xml:space="preserve">
+    <value>Type the name of the account.</value>
+  </data>
+  <data name="AccountNameEmptyMessageTitle" xml:space="preserve">
+    <value>THE NAME?</value>
+  </data>
+  <data name="AccountNormal" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="AmountEmptyMessageText" xml:space="preserve">
+    <value>Enter the amount.</value>
+  </data>
+  <data name="AmountEmptyMessageTitle" xml:space="preserve">
+    <value>HOW MANY?</value>
+  </data>
+  <data name="AmountIncorrectMessageText" xml:space="preserve">
+    <value>Incorrect format of the amount.</value>
+  </data>
+  <data name="AmountIncorrectMessageTitle" xml:space="preserve">
+    <value>HOW MANY?</value>
+  </data>
+  <data name="AmountNormal" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="CategoriesSmall" xml:space="preserve">
+    <value>categories</value>
+  </data>
+  <data name="CategoryNormal" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CategorySmall" xml:space="preserve">
+    <value>category</value>
+  </data>
+  <data name="ChooseSmall" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="DateNormal" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DebtSmall" xml:space="preserve">
+    <value>debt</value>
+  </data>
+  <data name="DebtsSmall" xml:space="preserve">
+    <value>debts</value>
+  </data>
+  <data name="DescriptionNormal" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ExpenceNormal" xml:space="preserve">
+    <value>Expense</value>
+  </data>
+  <data name="ExpencesSmall" xml:space="preserve">
+    <value>expenses</value>
+  </data>
+  <data name="FromNormal" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="GiveNormal" xml:space="preserve">
+    <value>Give</value>
+  </data>
+  <data name="IncomeNormal" xml:space="preserve">
+    <value>Income</value>
+  </data>
+  <data name="PeopleSmall" xml:space="preserve">
+    <value>people</value>
+  </data>
+  <data name="PersonNameNormal" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="PersonNormal" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="PersonSmall" xml:space="preserve">
+    <value>person</value>
+  </data>
+  <data name="SettingsSmall" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="TakeNormal" xml:space="preserve">
+    <value>Take</value>
+  </data>
+  <data name="TimeNormal" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="ToNormal" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="TransactionSmall" xml:space="preserve">
+    <value>transaction</value>
+  </data>
+  <data name="TransferSmall" xml:space="preserve">
+    <value>transfer</value>
+  </data>
+  <data name="TypeNormal" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="AccountEmptyMessageText" xml:space="preserve">
+    <value>Choose account.</value>
+  </data>
+  <data name="AccountEmptyMessageTitle" xml:space="preserve">
+    <value>ACCOUNT?</value>
+  </data>
+  <data name="CashbackMessageText" xml:space="preserve">
+    <value>To return the money to the appropriate accounts?</value>
+  </data>
+  <data name="CashbackMessageTitle" xml:space="preserve">
+    <value>MONEY?</value>
+  </data>
+  <data name="CategoryDeleteMessageText" xml:space="preserve">
+    <value>Are you sure you want to delete the category?</value>
+  </data>
+  <data name="CategoryDeleteMessageTitle" xml:space="preserve">
+    <value>DELETE?</value>
+  </data>
+  <data name="CategoryDeleteTransactionsMessageText" xml:space="preserve">
+    <value>When you delete a category will also delete all transactions in that category.</value>
+  </data>
+  <data name="CategoryDeleteTransactionsMessageTitle" xml:space="preserve">
+    <value>IMPORTANT!</value>
+  </data>
+  <data name="CategoryNameEmptyMessageText" xml:space="preserve">
+    <value>Type the name of the category.</value>
+  </data>
+  <data name="CategoryNameEmptyMessageTitle" xml:space="preserve">
+    <value>NAME?</value>
+  </data>
+  <data name="PersonEmptyMessageText" xml:space="preserve">
+    <value>Choose a person.</value>
+  </data>
+  <data name="PersonEmptyMessageTitle" xml:space="preserve">
+    <value>WHO?</value>
+  </data>
+  <data name="TransactionsDeleteMessageText" xml:space="preserve">
+    <value>Are you sure yo want to delete transactions?</value>
+  </data>
+  <data name="TransactionsDeleteMessageTitle" xml:space="preserve">
+    <value>DELETE?</value>
+  </data>
+  <data name="CategoryEmptyMessageText" xml:space="preserve">
+    <value>Choose a category.</value>
+  </data>
+  <data name="CategoryEmptyMessageTitle" xml:space="preserve">
+    <value>CATEGORY?</value>
+  </data>
+  <data name="PersonDeleteMessageText" xml:space="preserve">
+    <value>Are you sure you want to delete a person?</value>
+  </data>
+  <data name="PersonDeleteMessageTitle" xml:space="preserve">
+    <value>DELETE?</value>
+  </data>
+  <data name="PersonDeleteTransactionsMessageText" xml:space="preserve">
+    <value>When a person will also delete all the transactions associated with it.</value>
+  </data>
+  <data name="PersonDeleteTransactionsMessageTitle" xml:space="preserve">
+    <value>IMPORTANT!</value>
+  </data>
+  <data name="PersonNameEmptyMessageText" xml:space="preserve">
+    <value>Type the name of the person.</value>
+  </data>
+  <data name="PersonNameEmptyMessageTitle" xml:space="preserve">
+    <value>WHO?</value>
+  </data>
+  <data name="BalanceSmall" xml:space="preserve">
+    <value>balance</value>
+  </data>
+  <data name="PerDay" xml:space="preserve">
+    <value> per day</value>
+  </data>
+  <data name="TotalNormal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="DateToNormal" xml:space="preserve">
+    <value>Before</value>
+  </data>
+  <data name="NoDataMessage" xml:space="preserve">
+    <value>No data to display...</value>
+  </data>
+  <data name="StatisticsSmall" xml:space="preserve">
+    <value>statistics</value>
+  </data>
+  <data name="TodayNormal" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="AccountDeleted" xml:space="preserve">
+    <value>deleted</value>
+  </data>
+  <data name="AccountDeleteTransactionsMessageTitle" xml:space="preserve">
+    <value>IMPORTANT!</value>
+  </data>
+  <data name="DeletedSmall" xml:space="preserve">
+    <value>deleted</value>
+  </data>
+  <data name="RestoreSmall" xml:space="preserve">
+    <value>restore</value>
+  </data>
+  <data name="PersonPhoneNormal" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="ForwardSmall" xml:space="preserve">
+    <value>forward</value>
+  </data>
+  <data name="DaySmall" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="TrialMessageTitle" xml:space="preserve">
+    <value>DEMO-VERSION</value>
+  </data>
+  <data name="AboutSmall" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>Finance+Debts - simple and handy app to manage your income and expenses, and debts and loans.</value>
+  </data>
+  <data name="EmailNormal" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="VersionNormal" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="TakeSmall" xml:space="preserve">
+    <value>take</value>
+  </data>
+  <data name="TodaySmall" xml:space="preserve">
+    <value>today</value>
+  </data>
+  <data name="YearSmall" xml:space="preserve">
+    <value>year</value>
+  </data>
+  <data name="PeopleNormal" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="LiveTileNormal" xml:space="preserve">
+    <value>Tiles</value>
+  </data>
+  <data name="LikeSmall" xml:space="preserve">
+    <value>rate</value>
+  </data>
+  <data name="IncomesNormal" xml:space="preserve">
+    <value>Incomes</value>
+  </data>
+  <data name="LanguageNormal" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="ReloadApp" xml:space="preserve">
+    <value>Restart application...</value>
+  </data>
+  <data name="ShowPenny" xml:space="preserve">
+    <value>Show penny</value>
+  </data>
+  <data name="UploadingFailed" xml:space="preserve">
+    <value>Unable to upload.</value>
+  </data>
+  <data name="ApplicationTitleNormal" xml:space="preserve">
+    <value>Finance+Debts</value>
+  </data>
+  <data name="DataDeletedMEssageTitle" xml:space="preserve">
+    <value>DELETED!</value>
+  </data>
+  <data name="TransparentTile" xml:space="preserve">
+    <value>Transparent tile</value>
+  </data>
+  <data name="SignOutButton" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="UpdateSmall" xml:space="preserve">
+    <value>update</value>
+  </data>
+  <data name="CurrencyRatesSmall" xml:space="preserve">
+    <value>exchange rates</value>
+  </data>
+  <data name="CurrentCurrencyNormal" xml:space="preserve">
+    <value>Main currency</value>
+  </data>
+  <data name="AccountCurrencyEmptyMessageTitle" xml:space="preserve">
+    <value>CURRENCY?</value>
+  </data>
+  <data name="AccountCurrencyEmptyMessageText" xml:space="preserve">
+    <value>Select a currency.</value>
+  </data>
+  <data name="AutoUpdateRatesNormal" xml:space="preserve">
+    <value>Automatically update exchange rates</value>
+  </data>
+  <data name="CurrencyRatesLastUpdate" xml:space="preserve">
+    <value>Last update on</value>
+  </data>
+  <data name="CurrencyRUB" xml:space="preserve">
+    <value>Russian ruble</value>
+  </data>
+  <data name="LostConnectionMessageTitle" xml:space="preserve">
+    <value>CONNECTION ERROR</value>
+  </data>
+  <data name="NeverSmall" xml:space="preserve">
+    <value>never</value>
+  </data>
+  <data name="CurrencyUAH" xml:space="preserve">
+    <value>Ukraine hryvnia</value>
+  </data>
+  <data name="CurrencyTRY" xml:space="preserve">
+    <value>Turkish lira</value>
+  </data>
+  <data name="CurrencyTMT" xml:space="preserve">
+    <value>New Turkmen manat</value>
+  </data>
+  <data name="CurrencyTJS" xml:space="preserve">
+    <value>Tajikistani somoni</value>
+  </data>
+  <data name="CurrencySGD" xml:space="preserve">
+    <value>Singapore dollar</value>
+  </data>
+  <data name="CurrencySEK" xml:space="preserve">
+    <value>Swedish krona</value>
+  </data>
+  <data name="CurrencyRON" xml:space="preserve">
+    <value>Romanian new Leu</value>
+  </data>
+  <data name="CurrencyPLN" xml:space="preserve">
+    <value>Polish złoty</value>
+  </data>
+  <data name="CurrencyNOK" xml:space="preserve">
+    <value>Norwegian krone</value>
+  </data>
+  <data name="CurrencyMDL" xml:space="preserve">
+    <value>Moldovan leu</value>
+  </data>
+  <data name="CurrencyKZT" xml:space="preserve">
+    <value>Kazakhstan tenge</value>
+  </data>
+  <data name="CurrencyKRW" xml:space="preserve">
+    <value>Won the Republic of Korea</value>
+  </data>
+  <data name="CurrencyKGS" xml:space="preserve">
+    <value>Kyrgyz som</value>
+  </data>
+  <data name="CurrencyJPY" xml:space="preserve">
+    <value>Japanese yen</value>
+  </data>
+  <data name="CurrencyINR" xml:space="preserve">
+    <value>Indian rupee</value>
+  </data>
+  <data name="CurrencyHUF" xml:space="preserve">
+    <value>Hungarian forint</value>
+  </data>
+  <data name="CurrencyGBP" xml:space="preserve">
+    <value>Pound sterling</value>
+  </data>
+  <data name="CurrencyEUR" xml:space="preserve">
+    <value>Euro</value>
+  </data>
+  <data name="CurrencyDKK" xml:space="preserve">
+    <value>Danish krone</value>
+  </data>
+  <data name="CurrencyCZK" xml:space="preserve">
+    <value>Czech koruna</value>
+  </data>
+  <data name="CurrencyCNY" xml:space="preserve">
+    <value>Chinese yuan</value>
+  </data>
+  <data name="CurrencyCHF" xml:space="preserve">
+    <value>Swiss franc</value>
+  </data>
+  <data name="CurrencyCAD" xml:space="preserve">
+    <value>Canadian dollar</value>
+  </data>
+  <data name="CurrencyBYR" xml:space="preserve">
+    <value>Belarussian ruble</value>
+  </data>
+  <data name="CurrencyBRL" xml:space="preserve">
+    <value>Brazilian real</value>
+  </data>
+  <data name="CurrencyBGN" xml:space="preserve">
+    <value>Bulgarian lev</value>
+  </data>
+  <data name="CurrencyAZN" xml:space="preserve">
+    <value>Azerbaijanian manat</value>
+  </data>
+  <data name="CurrencyAUD" xml:space="preserve">
+    <value>Australian dollar</value>
+  </data>
+  <data name="CurrencyAMD" xml:space="preserve">
+    <value>Armenian dram</value>
+  </data>
+  <data name="CurrencyUSD" xml:space="preserve">
+    <value>United States Dollar</value>
+  </data>
+  <data name="CurrencyZAR" xml:space="preserve">
+    <value>South African Rand</value>
+  </data>
+  <data name="CurrenciesNormal" xml:space="preserve">
+    <value>Currencies</value>
+  </data>
+  <data name="SelectPhotoSmall" xml:space="preserve">
+    <value>select photo</value>
+  </data>
+  <data name="LastBackupDateText" xml:space="preserve">
+    <value>Last sync</value>
+  </data>
+  <data name="TransparentInterface" xml:space="preserve">
+    <value>Transparent interface</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>ERROR!</value>
+  </data>
+  <data name="UpdateTitleSmall" xml:space="preserve">
+    <value>updating</value>
+  </data>
+  <data name="UpdateMessage" xml:space="preserve">
+    <value>Wait, necessary updates are carried out.</value>
+  </data>
+  <data name="DatabaseMigration" xml:space="preserve">
+    <value>Database migration...
+</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>Saving...</value>
+  </data>
+  <data name="Restoring" xml:space="preserve">
+    <value>Restoration...</value>
+  </data>
+  <data name="ForgetSmall" xml:space="preserve">
+    <value>forget</value>
+  </data>
+  <data name="PerDayAvgSmall" xml:space="preserve">
+    <value>average per day</value>
+  </data>
+  <data name="UpdatingCurrencyRates" xml:space="preserve">
+    <value>Updating of exchange rates...</value>
+  </data>
+  <data name="NumberOfDigits" xml:space="preserve">
+    <value>The number of digits after the decimal point</value>
+  </data>
+  <data name="AdBlock" xml:space="preserve">
+    <value>Remove ads</value>
+  </data>
+  <data name="ForgetMessageTitle" xml:space="preserve">
+    <value>FORGET?</value>
+  </data>
+  <data name="ForgetMessageText" xml:space="preserve">
+    <value>Delete all transactions of this person?</value>
+  </data>
+  <data name="Deleting" xml:space="preserve">
+    <value>Deleting...</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="EmptyField" xml:space="preserve">
+    <value>Empty field.</value>
+  </data>
+  <data name="ApplicationBackgroundNormal" xml:space="preserve">
+    <value>Application background</value>
+  </data>
+  <data name="CurrencyXDR" xml:space="preserve">
+    <value>WBS</value>
+  </data>
+  <data name="CurrencyUZS" xml:space="preserve">
+    <value>Uzbekistan sum</value>
+  </data>
+  <data name="LostConnectionMessageText" xml:space="preserve">
+    <value>Unable to download currency exchange rates.</value>
+  </data>
+  <data name="CurrencySmall" xml:space="preserve">
+    <value>currency</value>
+  </data>
+  <data name="CurrencyNormal" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="CurrenciesSmall" xml:space="preserve">
+    <value>currencies</value>
+  </data>
+  <data name="SigningIn" xml:space="preserve">
+    <value>Signing In...</value>
+  </data>
+  <data name="SignInButton" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="DataDeletedMessageText" xml:space="preserve">
+    <value>All data deleted.</value>
+  </data>
+  <data name="Uploading" xml:space="preserve">
+    <value>Uploading...</value>
+  </data>
+  <data name="Uploaded" xml:space="preserve">
+    <value>Uploaded!</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Log In.</value>
+  </data>
+  <data name="RestoreWarningMessageTitle" xml:space="preserve">
+    <value>ATTENTION!</value>
+  </data>
+  <data name="RestoreWarningMessageText" xml:space="preserve">
+    <value>The backup will replace the current database. Continue?</value>
+  </data>
+  <data name="RestoreData" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="PayOffMessageTitle" xml:space="preserve">
+    <value>PAY OFF?</value>
+  </data>
+  <data name="PayOffMessageText" xml:space="preserve">
+    <value>Are you sure you want to pay off debt?</value>
+  </data>
+  <data name="DownloadingFailed" xml:space="preserve">
+    <value>Unable to download.</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>Downloading...</value>
+  </data>
+  <data name="Downloaded" xml:space="preserve">
+    <value>Downloaded!</value>
+  </data>
+  <data name="DeleteData" xml:space="preserve">
+    <value>Delete data</value>
+  </data>
+  <data name="DeleteDataWarnindMessageTitle" xml:space="preserve">
+    <value>DELETE?</value>
+  </data>
+  <data name="DeleteDataWarnindMessageText" xml:space="preserve">
+    <value>Are you sure you want to delete all your data?</value>
+  </data>
+  <data name="DataSmall" xml:space="preserve">
+    <value>data</value>
+  </data>
+  <data name="DataNormal" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="BackupWarningMessageTitle" xml:space="preserve">
+    <value>ATTENTION!</value>
+  </data>
+  <data name="BackupWarningMessageText" xml:space="preserve">
+    <value>A new backup copy replaces the old one. Continue?</value>
+  </data>
+  <data name="BackupData" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="AuthentificationFailed" xml:space="preserve">
+    <value>Can't sign in.</value>
+  </data>
+  <data name="AuthentificationCompleted" xml:space="preserve">
+    <value>You are logged in!</value>
+  </data>
+  <data name="GeneralSmall" xml:space="preserve">
+    <value>general</value>
+  </data>
+  <data name="GeneralNormal" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="ExpencesNormal" xml:space="preserve">
+    <value>Expenses</value>
+  </data>
+  <data name="DebtsNormal" xml:space="preserve">
+    <value>Debts</value>
+  </data>
+  <data name="LiveTileSmall" xml:space="preserve">
+    <value>tiles</value>
+  </data>
+  <data name="CategoriesNormal" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="AccountsNormal" xml:space="preserve">
+    <value>Accounts</value>
+  </data>
+  <data name="WeekSmall" xml:space="preserve">
+    <value>week</value>
+  </data>
+  <data name="MonthSmall" xml:space="preserve">
+    <value>month</value>
+  </data>
+  <data name="RepaySmall" xml:space="preserve">
+    <value>pay off</value>
+  </data>
+  <data name="GiveSmall" xml:space="preserve">
+    <value>give</value>
+  </data>
+  <data name="TrialMessageText" xml:space="preserve">
+    <value>This feature is not available in the trial version. Buy the full version?</value>
+  </data>
+  <data name="BackwardSmall" xml:space="preserve">
+    <value>backward</value>
+  </data>
+  <data name="AccountDeleteTransactionsMessageText" xml:space="preserve">
+    <value>When you delete an account will also delete all transactions associated with it.</value>
+  </data>
+  <data name="DateFromNormal" xml:space="preserve">
+    <value>After</value>
+  </data>
+</root>

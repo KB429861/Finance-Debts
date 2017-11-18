@@ -1,0 +1,78 @@
+﻿<UserControl
+    x:Class="Finance.Controls.TransactionControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="120" d:DesignWidth="400">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid
+            Background="{Binding BackgroundColor, FallbackValue={StaticResource GreyBackgroundBrush}}">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="{Binding LocalizedResources.TimeNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                Margin="12,6,12,6" />
+            <TextBlock
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="{Binding LocalizedResources.AmountNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                Margin="12,0,12,6" />
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="0"
+                Text="{Binding LocalizedResources.DescriptionNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                Margin="12,0,12,6" />
+            <TextBlock
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="{Binding DateTimeValue, FallbackValue=12:50, StringFormat=t}"
+                Margin="12,6,12,6" />
+            <Grid
+                Grid.Row="1"
+                Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    Grid.Column="0"
+                    Text="{Binding AmountValue, FallbackValue=0, Converter={StaticResource AmountConverter}}"
+                    Foreground="{Binding AmountValue, FallbackValue={StaticResource GreyAccentBrush}, Converter={StaticResource AmountColorConverter}}"
+                    Margin="12,0,6,6" />
+                <TextBlock
+                    Grid.Column="1"
+                    Text="{Binding CurrencyText, FallbackValue=RUB}"
+                    Foreground="{Binding AmountValue, FallbackValue={StaticResource GreyAccentBrush}, Converter={StaticResource AmountColorConverter}}"
+                    Margin="0,0,12,6" />
+            </Grid>
+            <TextBlock
+                Grid.Row="2"
+                Grid.Column="1"
+                Text="{Binding DescriptionText, FallbackValue=Описание}"
+                Margin="12,0,12,6" />
+        </Grid>
+        <Grid
+            Grid.Row="1"
+            Background="{Binding AmountValue, FallbackValue={StaticResource GreyAccentBrush}, Converter={StaticResource AmountColorConverter}}"
+            Height="3" />
+    </Grid>
+</UserControl>

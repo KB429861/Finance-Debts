@@ -1,0 +1,78 @@
+﻿<common:BasePage
+    x:Class="Finance.BackupPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:common="clr-namespace:Finance.Common"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="{StaticResource PhoneChromeColor}"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <Grid
+        Background="{StaticResource PhoneChromeBrush}">
+        <phone:Pivot>
+            <phone:Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock
+                        Text="{Binding}"
+                        FontSize="{StaticResource PhoneFontSizeMedium}"
+                        FontFamily="{StaticResource PhoneFontFamilySemiBold}" />
+                </DataTemplate>
+            </phone:Pivot.HeaderTemplate>
+            <phone:PivotItem
+                Header="{Binding LocalizedResources.DataSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}, Converter={StaticResource CaseConverter}, ConverterParameter=Upper}">
+                <ListBox>
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <TextBlock
+                        x:Name="InfoTextBlock"
+                        Text="{Binding LocalizedResources.SignIn, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Margin="12,0"
+                        Style="{StaticResource PhoneTextSubtleStyle}" />
+                    <Button
+                        x:Name="SignInButton"
+                        Content="Sign In"
+                        IsEnabled="False"
+                        Click="SignInButton_OnClick"
+                        Background="#FF094AB2"
+                        BorderBrush="#FF094AB2" />
+                    <Button
+                        x:Name="BackupButton"
+                        Content="{Binding LocalizedResources.BackupData, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Margin="0,24,0,0"
+                        IsEnabled="False"
+                        Click="BackupButton_OnClick" />
+                    <Button
+                        x:Name="RestoreButton"
+                        IsEnabled="False"
+                        Content="{Binding LocalizedResources.RestoreData, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Click="RestoreButton_OnClick" />
+                    <Button
+                        x:Name="DeleteButton"
+                        Content="{Binding LocalizedResources.DeleteData, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Margin="0,24"
+                        Click="DeleteButton_OnClick" />
+                    <TextBlock
+                        Text="{Binding LocalizedResources.LastBackupDateText, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Style="{StaticResource PhoneTextSubtleStyle}" />
+                    <TextBlock
+                        x:Name="LastBackupTextBlock"
+                        Margin="12,0" />
+                </ListBox>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</common:BasePage>

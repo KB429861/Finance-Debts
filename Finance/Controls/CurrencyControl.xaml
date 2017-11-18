@@ -1,0 +1,48 @@
+﻿<UserControl
+    x:Class="Finance.Controls.CurrencyControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeMedium}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="80" d:DesignWidth="400">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid
+            Background="{Binding BackgroundColor, FallbackValue={StaticResource ElementBackgroundBrush}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock
+                Grid.Row="0"
+                Text="{Binding NameText, FallbackValue=Наличные}"
+                Margin="12,6,12,6" />
+                    <TextBlock
+                        Grid.Row="1"
+                        HorizontalAlignment="Right"
+                        Text="{Binding AmountValue, FallbackValue=0, Converter={StaticResource CurrencyValueConverter}}"
+                        Foreground="{Binding AccentColor, FallbackValue={StaticResource GreyAccentBrush}}"
+                        FontSize="{StaticResource PhoneFontSizeNormal}"
+                        Margin="12,0,12,6" />
+                    <TextBlock
+                        Grid.Row="1"
+                        HorizontalAlignment="Left"
+                        Text="{Binding CurrencyText, FallbackValue=RUB}"
+                        Foreground="{Binding AccentColor, FallbackValue={StaticResource GreyAccentBrush}}"
+                        FontSize="{StaticResource PhoneFontSizeNormal}"
+                        Margin="12,0,12,6" />
+            </Grid>
+        <Grid
+            Grid.Row="1"
+            Background="{Binding AccentColor, FallbackValue={StaticResource GreyAccentBrush}}"
+            Height="3" />
+    </Grid>
+</UserControl>

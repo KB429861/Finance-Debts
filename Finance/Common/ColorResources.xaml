@@ -1,0 +1,35 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--http://www.flatuicolorpicker.com/-->
+
+    <Color x:Key="LynchColor">#6C7A89</Color>
+    <Color x:Key="PomegranadeColor">#F22613</Color>
+    <Color x:Key="ShamrockColor">#2ECC71</Color>
+    <Color x:Key="SandstormColor">#F9BF3B</Color>
+    <Color x:Key="EbonyClayColor">#22313F</Color>
+    <Color x:Key="PickledBluewoodColor">#34495E</Color>
+    <Color x:Key="RoyalBlueColor">#4183D7</Color>
+
+    <Color x:Key="SystemTrayBackgroundColor">#34495E</Color>
+
+    <Color x:Key="AppBarForeground">#393939</Color>
+    <Color x:Key="AppBarBackground">#2B2B2B</Color>
+
+    <SolidColorBrush x:Key="ElementBackgroundBrush" Color="{StaticResource PhoneInactiveColor}" Opacity="0.7"/>
+    <SolidColorBrush x:Key="HeaderBackgroundBrush" Color="{StaticResource PhoneInactiveColor}" />
+
+    <SolidColorBrush x:Key="PageBackgroundBrush" Color="{StaticResource EbonyClayColor}" />
+    <SolidColorBrush x:Key="CommandBarBackgroundBrush" Color="{StaticResource PickledBluewoodColor}" />
+    <SolidColorBrush x:Key="RedAccentBrush" Color="{StaticResource PomegranadeColor}" />
+    <SolidColorBrush x:Key="RedBackgroundBrush" Color="{StaticResource PomegranadeColor}" Opacity="0.3" />
+    <SolidColorBrush x:Key="GreenAccentBrush" Color="{StaticResource ShamrockColor}" />
+    <SolidColorBrush x:Key="GreenBackgroundBrush" Color="{StaticResource ShamrockColor}" Opacity="0.3" />
+    <SolidColorBrush x:Key="YellowAccentBrush" Color="{StaticResource SandstormColor}" />
+    <SolidColorBrush x:Key="YellowBackgroundBrush" Color="{StaticResource SandstormColor}" Opacity="0.3" />
+    <SolidColorBrush x:Key="GreyAccentBrush" Color="{StaticResource LynchColor}" />
+    <SolidColorBrush x:Key="GreyBackgroundBrush" Color="{StaticResource LynchColor}" Opacity="0.3" />
+    <SolidColorBrush x:Key="BlueAccentBrush" Color="{StaticResource RoyalBlueColor}" />
+
+</ResourceDictionary>

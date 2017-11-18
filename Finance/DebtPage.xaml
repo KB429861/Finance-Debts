@@ -1,0 +1,259 @@
+﻿<common:BasePage
+    x:Name="Page"
+    x:Class="Finance.DebtPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:model="clr-namespace:Finance.Database.Model"
+    xmlns:common="clr-namespace:Finance.Common"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="{StaticResource PhoneChromeColor}"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <Grid
+        Background="{StaticResource PhoneChromeBrush}">
+        <phone:Pivot>
+            <phone:Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock
+                        Text="{Binding}"
+                        FontSize="{StaticResource PhoneFontSizeMedium}"
+                        FontFamily="{StaticResource PhoneFontFamilySemiBold}" />
+                </DataTemplate>
+            </phone:Pivot.HeaderTemplate>
+            <phone:PivotItem
+                Header="{Binding LocalizedResources.DebtSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}, Converter={StaticResource CaseConverter}, ConverterParameter=Upper}">
+                <ListBox>
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <toolkit:ListPicker
+                            Grid.Column="0"
+                            x:Name="PersonListPicker"
+                            Header="{Binding LocalizedResources.PersonNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                            Margin="12,0,0,12">
+                            <toolkit:ListPicker.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock
+                                        Text="{Binding Name}"
+                                        d:DataContext="{d:DesignInstance model:Person}" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.ItemTemplate>
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock
+                                        Text="{Binding Name}"
+                                        FontSize="{StaticResource PhoneFontSizeLarge}"
+                                        Margin="0,0,0,12"
+                                        d:DataContext="{d:DesignInstance model:Person}" />
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                        </toolkit:ListPicker>
+                        <Button
+                            Grid.Column="1"
+                            Width="76"
+                            Height="76"
+                            VerticalAlignment="Bottom"
+                            Style="{StaticResource RoundButtonStyle}"
+                            Click="AddPersonButton_Click">
+                            <Rectangle
+                                Fill="{StaticResource PhoneForegroundBrush}"
+                                Width="40"
+                                Height="40"
+                                Margin="-10">
+                                <Rectangle.OpacityMask>
+                                    <ImageBrush
+                                        ImageSource="/Assets/AppBar/add.png" />
+                                </Rectangle.OpacityMask>
+                            </Rectangle>
+                        </Button>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <toolkit:ListPicker
+                            Grid.Column="0"
+                            x:Name="AccountsListPicker"
+                            Header="{Binding LocalizedResources.AccountNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                            Margin="12,0,0,12">
+                            <toolkit:ListPicker.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid
+                                        d:DataContext="{d:DesignInstance model:Account}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Text="{Binding Name}" />
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            Text="{Binding CurrencyCharCode, Converter={StaticResource CharCodeConverter}}"
+                                            Margin="12,0,0,0" />
+                                        <TextBlock
+                                            Grid.Column="2"
+                                            Text="{Binding Group, Converter={StaticResource GroupConverter}}" />
+                                    </Grid>
+                                </DataTemplate>
+                            </toolkit:ListPicker.ItemTemplate>
+                            <toolkit:ListPicker.FullModeItemTemplate>
+                                <DataTemplate>
+                                    <Grid
+                                        d:DataContext="{d:DesignInstance model:Account}">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock
+                                            Grid.Column="0"
+                                            Text="{Binding Name}"
+                                            FontSize="{StaticResource PhoneFontSizeLarge}"
+                                            Margin="0,0,0,12" />
+                                        <TextBlock
+                                            Grid.Column="1"
+                                            Text="{Binding CurrencyCharCode, Converter={StaticResource CharCodeConverter}}"
+                                            FontSize="{StaticResource PhoneFontSizeLarge}"
+                                            Margin="12,0,0,12" />
+                                        <TextBlock
+                                            Grid.Column="2"
+                                            Text="{Binding Group, Converter={StaticResource GroupConverter}}"
+                                            FontSize="{StaticResource PhoneFontSizeLarge}"
+                                            Margin="0,0,0,12" />
+                                    </Grid>
+                                </DataTemplate>
+                            </toolkit:ListPicker.FullModeItemTemplate>
+                        </toolkit:ListPicker>
+                        <Button
+                            Grid.Column="1"
+                            Width="76"
+                            Height="76"
+                            VerticalAlignment="Bottom"
+                            Style="{StaticResource RoundButtonStyle}"
+                            Click="AddAccountButton_Click">
+                            <Rectangle
+                                Fill="{StaticResource PhoneForegroundBrush}"
+                                Width="40"
+                                Height="40"
+                                Margin="-10">
+                                <Rectangle.OpacityMask>
+                                    <ImageBrush
+                                        ImageSource="/Assets/AppBar/add.png" />
+                                </Rectangle.OpacityMask>
+                            </Rectangle>
+                        </Button>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <toolkit:DatePicker
+                            x:Name="TransactionDatePicker"
+                            Grid.Column="0"
+                            Header="{Binding LocalizedResources.DateNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}" />
+                        <toolkit:TimePicker
+                            x:Name="TransactionTimePicker"
+                            Grid.Column="1"
+                            Header="{Binding LocalizedResources.TimeNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}" />
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <RadioButton
+                            x:Name="GiveRadioButton"
+                            Grid.Column="0"
+                            IsChecked="true"
+                            Content="{Binding LocalizedResources.GiveNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                            GroupName="TypeGroup" />
+                        <RadioButton
+                            x:Name="TakeRadioButton"
+                            Grid.Column="1"
+                            Content="{Binding LocalizedResources.TakeNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                            GroupName="TypeGroup" />
+                    </Grid>
+                    <toolkit:ListPicker
+                        x:Name="CurrencyListPicker"
+                        Header="{Binding LocalizedResources.CurrencyNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}">
+                        <toolkit:ListPicker.ItemTemplate>
+                            <DataTemplate>
+                                <Grid d:DataContext="{d:DesignInstance model:Currency}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock
+                                        Grid.Column="0"
+                                        Text="{Binding Name}" />
+                                    <TextBlock
+                                        Grid.Column="1"
+                                        Text="{Binding CharCode, Converter={StaticResource CharCodeConverter}}"
+                                        Margin="12,0,0,0" />
+                                </Grid>
+                            </DataTemplate>
+                        </toolkit:ListPicker.ItemTemplate>
+                        <toolkit:ListPicker.FullModeItemTemplate>
+                            <DataTemplate>
+                                <Grid d:DataContext="{d:DesignData Currency}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock
+                                        Grid.Column="0"
+                                        Text="{Binding Name}"
+                                        FontSize="{StaticResource PhoneFontSizeLarge}"
+                                        Margin="0,0,0,12" />
+                                    <TextBlock
+                                        Grid.Column="1"
+                                        Text="{Binding CharCode, Converter={StaticResource CharCodeConverter}}"
+                                        FontSize="{StaticResource PhoneFontSizeLarge}"
+                                        Margin="12,0,0,12" />
+                                </Grid>
+                            </DataTemplate>
+                        </toolkit:ListPicker.FullModeItemTemplate>
+                    </toolkit:ListPicker>
+                    <TextBlock
+                        Text="{Binding LocalizedResources.AmountNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Style="{StaticResource PhoneTextSubtleStyle}" />
+                    <TextBox
+                        x:Name="AmountTextBox"
+                        InputScope="CurrencyAmountAndSymbol"
+                        KeyDown="AmountTextBox_KeyDown" />
+                    <TextBlock
+                        Text="{Binding LocalizedResources.DescriptionNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Style="{StaticResource PhoneTextSubtleStyle}" />
+                    <TextBox
+                        x:Name="DescriptionTextBox"
+                        InputScope="Text"
+                        Tap="DescriptionTextBox_OnTap"
+                        KeyDown="DescriptionTextBox_KeyDown"
+                        Margin="0,0,0,24" />
+                </ListBox>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</common:BasePage>

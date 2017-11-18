@@ -1,0 +1,855 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="ru" original="FINANCE/RESOURCES/APPRESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1605.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="FINANCE/RESOURCES/APPRESOURCES.RESX" datatype="resx">
+        <trans-unit id="ResourceFlowDirection" translate="yes" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated">LeftToRight</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</note>
+        </trans-unit>
+        <trans-unit id="ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>ru</source>
+          <target state="needs-review-translation">ru-RU</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          <note from="MultilingualBuild" annotates="source" priority="2">Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</note>
+        </trans-unit>
+        <trans-unit id="ApplicationTitle" translate="yes" xml:space="preserve">
+          <source>ФИНАНСЫ+ДОЛГИ</source>
+          <target state="new">ФИНАНСЫ+ДОЛГИ</target>
+        </trans-unit>
+        <trans-unit id="AccountSmall" translate="yes" xml:space="preserve">
+          <source>счет</source>
+          <target state="new">счет</target>
+        </trans-unit>
+        <trans-unit id="AccountsSmall" translate="yes" xml:space="preserve">
+          <source>счета</source>
+          <target state="new">счета</target>
+        </trans-unit>
+        <trans-unit id="AddSmall" translate="yes" xml:space="preserve">
+          <source>добавить</source>
+          <target state="new">добавить</target>
+        </trans-unit>
+        <trans-unit id="BalanceNormal" translate="yes" xml:space="preserve">
+          <source>Баланс</source>
+          <target state="new">Баланс</target>
+        </trans-unit>
+        <trans-unit id="CancelSmall" translate="yes" xml:space="preserve">
+          <source>отмена</source>
+          <target state="new">отмена</target>
+        </trans-unit>
+        <trans-unit id="DeleteSmall" translate="yes" xml:space="preserve">
+          <source>удалить</source>
+          <target state="new">удалить</target>
+        </trans-unit>
+        <trans-unit id="EditSmall" translate="yes" xml:space="preserve">
+          <source>изменить</source>
+          <target state="new">изменить</target>
+        </trans-unit>
+        <trans-unit id="IncomesSmall" translate="yes" xml:space="preserve">
+          <source>доходы</source>
+          <target state="new">доходы</target>
+        </trans-unit>
+        <trans-unit id="NameNormal" translate="yes" xml:space="preserve">
+          <source>Название</source>
+          <target state="new">Название</target>
+        </trans-unit>
+        <trans-unit id="SaveSmall" translate="yes" xml:space="preserve">
+          <source>сохранить</source>
+          <target state="new">сохранить</target>
+        </trans-unit>
+        <trans-unit id="AccountDeleteMessageText" translate="yes" xml:space="preserve">
+          <source>Вы уверены, что хотите удалить счет?</source>
+          <target state="new">Вы уверены, что хотите удалить счет?</target>
+        </trans-unit>
+        <trans-unit id="AccountDeleteMessageTitle" translate="yes" xml:space="preserve">
+          <source>УДАЛЯТЬ?</source>
+          <target state="new">УДАЛЯТЬ?</target>
+        </trans-unit>
+        <trans-unit id="AccountNameEmptyMessageText" translate="yes" xml:space="preserve">
+          <source>Введите название счета.</source>
+          <target state="new">Введите название счета.</target>
+        </trans-unit>
+        <trans-unit id="AccountNameEmptyMessageTitle" translate="yes" xml:space="preserve">
+          <source>НАЗВАНИЕ?</source>
+          <target state="new">НАЗВАНИЕ?</target>
+        </trans-unit>
+        <trans-unit id="AccountNormal" translate="yes" xml:space="preserve">
+          <source>Счет</source>
+          <target state="new">Счет</target>
+        </trans-unit>
+        <trans-unit id="AmountEmptyMessageText" translate="yes" xml:space="preserve">
+          <source>Введите сумму.</source>
+          <target state="new">Введите сумму.</target>
+        </trans-unit>
+        <trans-unit id="AmountEmptyMessageTitle" translate="yes" xml:space="preserve">
+          <source>СКОЛЬКО?</source>
+          <target state="new">СКОЛЬКО?</target>
+        </trans-unit>
+        <trans-unit id="AmountIncorrectMessageText" translate="yes" xml:space="preserve">
+          <source>Неправильный формат суммы.</source>
+          <target state="new">Неправильный формат суммы.</target>
+        </trans-unit>
+        <trans-unit id="AmountIncorrectMessageTitle" translate="yes" xml:space="preserve">
+          <source>СКОЛЬКО?</source>
+          <target state="new">СКОЛЬКО?</target>
+        </trans-unit>
+        <trans-unit id="AmountNormal" translate="yes" xml:space="preserve">
+          <source>Сумма</source>
+          <target state="new">Сумма</target>
+        </trans-unit>
+        <trans-unit id="CategoriesSmall" translate="yes" xml:space="preserve">
+          <source>категории</source>
+          <target state="new">категории</target>
+        </trans-unit>
+        <trans-unit id="CategoryNormal" translate="yes" xml:space="preserve">
+          <source>Категория</source>
+          <target state="new">Категория</target>
+        </trans-unit>
+        <trans-unit id="CategorySmall" translate="yes" xml:space="preserve">
+          <source>категория</source>
+          <target state="new">категория</target>
+        </trans-unit>
+        <trans-unit id="ChooseSmall" translate="yes" xml:space="preserve">
+          <source>выбрать</source>
+          <target state="new">выбрать</target>
+        </trans-unit>
+        <trans-unit id="DateNormal" translate="yes" xml:space="preserve">
+          <source>Дата</source>
+          <target state="new">Дата</target>
+        </trans-unit>
+        <trans-unit id="DebtSmall" translate="yes" xml:space="preserve">
+          <source>долг</source>
+          <target state="new">долг</target>
+        </trans-unit>
+        <trans-unit id="DebtsSmall" translate="yes" xml:space="preserve">
+          <source>долги</source>
+          <target state="new">долги</target>
+        </trans-unit>
+        <trans-unit id="DescriptionNormal" translate="yes" xml:space="preserve">
+          <source>Описание</source>
+          <target state="new">Описание</target>
+        </trans-unit>
+        <trans-unit id="ExpenceNormal" translate="yes" xml:space="preserve">
+          <source>Расход</source>
+          <target state="new">Расход</target>
+        </trans-unit>
+        <trans-unit id="ExpencesSmall" translate="yes" xml:space="preserve">
+          <source>расходы</source>
+          <target state="new">расходы</target>
+        </trans-unit>
+        <trans-unit id="FromNormal" translate="yes" xml:space="preserve">
+          <source>Откуда</source>
+          <target state="new">Откуда</target>
+        </trans-unit>
+        <trans-unit id="GiveNormal" translate="yes" xml:space="preserve">
+          <source>Дать</source>
+          <target state="new">Дать</target>
+        </trans-unit>
+        <trans-unit id="IncomeNormal" translate="yes" xml:space="preserve">
+          <source>Доход</source>
+          <target state="new">Доход</target>
+        </trans-unit>
+        <trans-unit id="PeopleSmall" translate="yes" xml:space="preserve">
+          <source>люди</source>
+          <target state="new">люди</target>
+        </trans-unit>
+        <trans-unit id="PersonNameNormal" translate="yes" xml:space="preserve">
+          <source>Имя</source>
+          <target state="new">Имя</target>
+        </trans-unit>
+        <trans-unit id="PersonNormal" translate="yes" xml:space="preserve">
+          <source>Человек</source>
+          <target state="new">Человек</target>
+        </trans-unit>
+        <trans-unit id="PersonSmall" translate="yes" xml:space="preserve">
+          <source>человек</source>
+          <target state="new">человек</target>
+        </trans-unit>
+        <trans-unit id="SettingsSmall" translate="yes" xml:space="preserve">
+          <source>настройки</source>
+          <target state="new">настройки</target>
+        </trans-unit>
+        <trans-unit id="TakeNormal" translate="yes" xml:space="preserve">
+          <source>Взять</source>
+          <target state="new">Взять</target>
+        </trans-unit>
+        <trans-unit id="TimeNormal" translate="yes" xml:space="preserve">
+          <source>Время</source>
+          <target state="new">Время</target>
+        </trans-unit>
+        <trans-unit id="ToNormal" translate="yes" xml:space="preserve">
+          <source>Куда</source>
+          <target state="new">Куда</target>
+        </trans-unit>
+        <trans-unit id="TransactionSmall" translate="yes" xml:space="preserve">
+          <source>транзакция</source>
+          <target state="new">транзакция</target>
+        </trans-unit>
+        <trans-unit id="TransferSmall" translate="yes" xml:space="preserve">
+          <source>перевод</source>
+          <target state="new">перевод</target>
+        </trans-unit>
+        <trans-unit id="TypeNormal" translate="yes" xml:space="preserve">
+          <source>Тип</source>
+          <target state="new">Тип</target>
+        </trans-unit>
+        <trans-unit id="AccountEmptyMessageText" translate="yes" xml:space="preserve">
+          <source>Выберите счет.</source>
+          <target state="new">Выберите счет.</target>
+        </trans-unit>
+        <trans-unit id="AccountEmptyMessageTitle" translate="yes" xml:space="preserve">
+          <source>СЧЕТ?</source>
+          <target state="new">СЧЕТ?</target>
+        </trans-unit>
+        <trans-unit id="CashbackMessageText" translate="yes" xml:space="preserve">
+          <source>Осуществить возврат денег на соответсвующие счета?</source>
+          <target state="new">Осуществить возврат денег на соответсвующие счета?</target>
+        </trans-unit>
+        <trans-unit id="CashbackMessageTitle" translate="yes" xml:space="preserve">
+          <source>ДЕНЬГИ?</source>
+          <target state="new">ДЕНЬГИ?</target>
+        </trans-unit>
+        <trans-unit id="CategoryDeleteMessageText" translate="yes" xml:space="preserve">
+          <source>Вы уверены, что хотите удалить категорию?</source>
+          <target state="new">Вы уверены, что хотите удалить категорию?</target>
+        </trans-unit>
+        <trans-unit id="CategoryDeleteMessageTitle" translate="yes" xml:space="preserve">
+          <source>УДАЛЯТЬ?</source>
+          <target state="new">УДАЛЯТЬ?</target>
+        </trans-unit>
+        <trans-unit id="CategoryDeleteTransactionsMessageText" translate="yes" xml:space="preserve">
+          <source>При удалении категории будут также удалены все транзакции этой категории.</source>
+          <target state="new">При удалении категории будут также удалены все транзакции этой категории.</target>
+        </trans-unit>
+        <trans-unit id="CategoryDeleteTransactionsMessageTitle" translate="yes" xml:space="preserve">
+          <source>ВАЖНО!</source>
+          <target state="new">ВАЖНО!</target>
+        </trans-unit>
+        <trans-unit id="CategoryNameEmptyMessageText" translate="yes" xml:space="preserve">
+          <source>Введите название категории.</source>
+          <target state="new">Введите название категории.</target>
+        </trans-unit>
+        <trans-unit id="CategoryNameEmptyMessageTitle" translate="yes" xml:space="preserve">
+          <source>НАЗВАНИЕ?</source>
+          <target state="new">НАЗВАНИЕ?</target>
+        </trans-unit>
+        <trans-unit id="PersonEmptyMessageText" translate="yes" xml:space="preserve">
+          <source>Выберите человека.</source>
+          <target state="new">Выберите человека.</target>
+        </trans-unit>
+        <trans-unit id="PersonEmptyMessageTitle" translate="yes" xml:space="preserve">
+          <source>КТО?</source>
+          <target state="new">КТО?</target>
+        </trans-unit>
+        <trans-unit id="TransactionsDeleteMessageText" translate="yes" xml:space="preserve">
+          <source>Вы уверены, что хотите удалить транзакции?</source>
+          <target state="new">Вы уверены, что хотите удалить транзакции?</target>
+        </trans-unit>
+        <trans-unit id="TransactionsDeleteMessageTitle" translate="yes" xml:space="preserve">
+          <source>УДАЛЯТЬ?</source>
+          <target state="new">УДАЛЯТЬ?</target>
+        </trans-unit>
+        <trans-unit id="CategoryEmptyMessageText" translate="yes" xml:space="preserve">
+          <source>Выберите категорию.</source>
+          <target state="new">Выберите категорию.</target>
+        </trans-unit>
+        <trans-unit id="CategoryEmptyMessageTitle" translate="yes" xml:space="preserve">
+          <source>КАТЕГОРИЯ?</source>
+          <target state="new">КАТЕГОРИЯ?</target>
+        </trans-unit>
+        <trans-unit id="PersonDeleteMessageText" translate="yes" xml:space="preserve">
+          <source>Вы уверены, что хотите удалить человека?</source>
+          <target state="new">Вы уверены, что хотите удалить человека?</target>
+        </trans-unit>
+        <trans-unit id="PersonDeleteMessageTitle" translate="yes" xml:space="preserve">
+          <source>УДАЛЯТЬ?</source>
+          <target state="new">УДАЛЯТЬ?</target>
+        </trans-unit>
+        <trans-unit id="PersonDeleteTransactionsMessageText" translate="yes" xml:space="preserve">
+          <source>При удалении человека будут также удалены все транзакции, связанные с ним.</source>
+          <target state="new">При удалении человека будут также удалены все транзакции, связанные с ним.</target>
+        </trans-unit>
+        <trans-unit id="PersonDeleteTransactionsMessageTitle" translate="yes" xml:space="preserve">
+          <source>ВАЖНО!</source>
+          <target state="new">ВАЖНО!</target>
+        </trans-unit>
+        <trans-unit id="PersonNameEmptyMessageText" translate="yes" xml:space="preserve">
+          <source>Введите имя человека.</source>
+          <target state="new">Введите имя человека.</target>
+        </trans-unit>
+        <trans-unit id="PersonNameEmptyMessageTitle" translate="yes" xml:space="preserve">
+          <source>КТО?</source>
+          <target state="new">КТО?</target>
+        </trans-unit>
+        <trans-unit id="BalanceSmall" translate="yes" xml:space="preserve">
+          <source>баланс</source>
+          <target state="new">баланс</target>
+        </trans-unit>
+        <trans-unit id="PerDay" translate="yes" xml:space="preserve">
+          <source> в день</source>
+          <target state="new"> в день</target>
+        </trans-unit>
+        <trans-unit id="TotalNormal" translate="yes" xml:space="preserve">
+          <source>Всего</source>
+          <target state="new">Всего</target>
+        </trans-unit>
+        <trans-unit id="DateToNormal" translate="yes" xml:space="preserve">
+          <source>По</source>
+          <target state="new">По</target>
+        </trans-unit>
+        <trans-unit id="NoDataMessage" translate="yes" xml:space="preserve">
+          <source>Нет данных для отображения...</source>
+          <target state="new">Нет данных для отображения...</target>
+        </trans-unit>
+        <trans-unit id="StatisticsSmall" translate="yes" xml:space="preserve">
+          <source>статистика</source>
+          <target state="new">статистика</target>
+        </trans-unit>
+        <trans-unit id="TodayNormal" translate="yes" xml:space="preserve">
+          <source>Сегодня</source>
+          <target state="new">Сегодня</target>
+        </trans-unit>
+        <trans-unit id="AccountDeleted" translate="yes" xml:space="preserve">
+          <source>удален</source>
+          <target state="new">удален</target>
+        </trans-unit>
+        <trans-unit id="AccountDeleteTransactionsMessageTitle" translate="yes" xml:space="preserve">
+          <source>ВАЖНО!</source>
+          <target state="new">ВАЖНО!</target>
+        </trans-unit>
+        <trans-unit id="DeletedSmall" translate="yes" xml:space="preserve">
+          <source>удаленные</source>
+          <target state="new">удаленные</target>
+        </trans-unit>
+        <trans-unit id="RestoreSmall" translate="yes" xml:space="preserve">
+          <source>восстановить</source>
+          <target state="new">восстановить</target>
+        </trans-unit>
+        <trans-unit id="PersonPhoneNormal" translate="yes" xml:space="preserve">
+          <source>Телефон</source>
+          <target state="new">Телефон</target>
+        </trans-unit>
+        <trans-unit id="ForwardSmall" translate="yes" xml:space="preserve">
+          <source>вперед</source>
+          <target state="new">вперед</target>
+        </trans-unit>
+        <trans-unit id="DaySmall" translate="yes" xml:space="preserve">
+          <source>день</source>
+          <target state="new">день</target>
+        </trans-unit>
+        <trans-unit id="TrialMessageTitle" translate="yes" xml:space="preserve">
+          <source>ДЕМО-ВЕРСИЯ</source>
+          <target state="new">ДЕМО-ВЕРСИЯ</target>
+        </trans-unit>
+        <trans-unit id="AboutSmall" translate="yes" xml:space="preserve">
+          <source>о приложении</source>
+          <target state="new">о приложении</target>
+        </trans-unit>
+        <trans-unit id="AppDescription" translate="yes" xml:space="preserve">
+          <source>Финансы+Долги - простое и удобное приложение для управления своими доходами и расходами, а также долгами и займами.</source>
+          <target state="new">Финансы+Долги - простое и удобное приложение для управления своими доходами и расходами, а также долгами и займами.</target>
+        </trans-unit>
+        <trans-unit id="EmailNormal" translate="yes" xml:space="preserve">
+          <source>Почта</source>
+          <target state="new">Почта</target>
+        </trans-unit>
+        <trans-unit id="VersionNormal" translate="yes" xml:space="preserve">
+          <source>Версия</source>
+          <target state="new">Версия</target>
+        </trans-unit>
+        <trans-unit id="TakeSmall" translate="yes" xml:space="preserve">
+          <source>взять</source>
+          <target state="new">взять</target>
+        </trans-unit>
+        <trans-unit id="TodaySmall" translate="yes" xml:space="preserve">
+          <source>сегодня</source>
+          <target state="new">сегодня</target>
+        </trans-unit>
+        <trans-unit id="YearSmall" translate="yes" xml:space="preserve">
+          <source>год</source>
+          <target state="new">год</target>
+        </trans-unit>
+        <trans-unit id="PeopleNormal" translate="yes" xml:space="preserve">
+          <source>Люди</source>
+          <target state="new">Люди</target>
+        </trans-unit>
+        <trans-unit id="LiveTileNormal" translate="yes" xml:space="preserve">
+          <source>Плитки</source>
+          <target state="new">Плитки</target>
+        </trans-unit>
+        <trans-unit id="LikeSmall" translate="yes" xml:space="preserve">
+          <source>оценить</source>
+          <target state="new">оценить</target>
+        </trans-unit>
+        <trans-unit id="IncomesNormal" translate="yes" xml:space="preserve">
+          <source>Доходы</source>
+          <target state="new">Доходы</target>
+        </trans-unit>
+        <trans-unit id="LanguageNormal" translate="yes" xml:space="preserve">
+          <source>Язык</source>
+          <target state="new">Язык</target>
+        </trans-unit>
+        <trans-unit id="ReloadApp" translate="yes" xml:space="preserve">
+          <source>Перезапустите приложение...</source>
+          <target state="new">Перезапустите приложение...</target>
+        </trans-unit>
+        <trans-unit id="ShowPenny" translate="yes" xml:space="preserve">
+          <source>Отображать копейки</source>
+          <target state="new">Отображать копейки</target>
+        </trans-unit>
+        <trans-unit id="UploadingFailed" translate="yes" xml:space="preserve">
+          <source>Не удается отправить.</source>
+          <target state="new">Не удается отправить.</target>
+        </trans-unit>
+        <trans-unit id="ApplicationTitleNormal" translate="yes" xml:space="preserve">
+          <source>Финансы+Долги</source>
+          <target state="new">Финансы+Долги</target>
+        </trans-unit>
+        <trans-unit id="DataDeletedMEssageTitle" translate="yes" xml:space="preserve">
+          <source>УДАЛЕНО!</source>
+          <target state="new">УДАЛЕНО!</target>
+        </trans-unit>
+        <trans-unit id="TransparentTile" translate="yes" xml:space="preserve">
+          <source>Прозрачный тайл</source>
+          <target state="new">Прозрачный тайл</target>
+        </trans-unit>
+        <trans-unit id="SignOutButton" translate="yes" xml:space="preserve">
+          <source>Выйти</source>
+          <target state="new">Выйти</target>
+        </trans-unit>
+        <trans-unit id="UpdateSmall" translate="yes" xml:space="preserve">
+          <source>обновить</source>
+          <target state="new">обновить</target>
+        </trans-unit>
+        <trans-unit id="CurrencyRatesSmall" translate="yes" xml:space="preserve">
+          <source>курсы валют</source>
+          <target state="new">курсы валют</target>
+        </trans-unit>
+        <trans-unit id="CurrentCurrencyNormal" translate="yes" xml:space="preserve">
+          <source>Основная валюта</source>
+          <target state="new">Основная валюта</target>
+        </trans-unit>
+        <trans-unit id="AccountCurrencyEmptyMessageTitle" translate="yes" xml:space="preserve">
+          <source>ВАЛЮТА?</source>
+          <target state="new">ВАЛЮТА?</target>
+        </trans-unit>
+        <trans-unit id="AccountCurrencyEmptyMessageText" translate="yes" xml:space="preserve">
+          <source>Выберите валюту.</source>
+          <target state="new">Выберите валюту.</target>
+        </trans-unit>
+        <trans-unit id="AutoUpdateRatesNormal" translate="yes" xml:space="preserve">
+          <source>Автоматически обновлять курсы валют</source>
+          <target state="new">Автоматически обновлять курсы валют</target>
+        </trans-unit>
+        <trans-unit id="CurrencyRatesLastUpdate" translate="yes" xml:space="preserve">
+          <source>Последнее обновление</source>
+          <target state="new">Последнее обновление</target>
+        </trans-unit>
+        <trans-unit id="CurrencyRUB" translate="yes" xml:space="preserve">
+          <source>Российский рубль</source>
+          <target state="new">Российский рубль</target>
+        </trans-unit>
+        <trans-unit id="LostConnectionMessageTitle" translate="yes" xml:space="preserve">
+          <source>ОШИБКА ПОДКЛЮЧЕНИЯ</source>
+          <target state="new">ОШИБКА ПОДКЛЮЧЕНИЯ</target>
+        </trans-unit>
+        <trans-unit id="NeverSmall" translate="yes" xml:space="preserve">
+          <source>никогда</source>
+          <target state="new">никогда</target>
+        </trans-unit>
+        <trans-unit id="CurrencyUAH" translate="yes" xml:space="preserve">
+          <source>Украинская гривна</source>
+          <target state="new">Украинская гривна</target>
+        </trans-unit>
+        <trans-unit id="CurrencyTRY" translate="yes" xml:space="preserve">
+          <source>Турецкая лира</source>
+          <target state="new">Турецкая лира</target>
+        </trans-unit>
+        <trans-unit id="CurrencyTMT" translate="yes" xml:space="preserve">
+          <source>Новый туркменский манат</source>
+          <target state="new">Новый туркменский манат</target>
+        </trans-unit>
+        <trans-unit id="CurrencyTJS" translate="yes" xml:space="preserve">
+          <source>Таджикский сомони</source>
+          <target state="new">Таджикский сомони</target>
+        </trans-unit>
+        <trans-unit id="CurrencySGD" translate="yes" xml:space="preserve">
+          <source>Сингапурский доллар</source>
+          <target state="new">Сингапурский доллар</target>
+        </trans-unit>
+        <trans-unit id="CurrencySEK" translate="yes" xml:space="preserve">
+          <source>Шведская крона</source>
+          <target state="new">Шведская крона</target>
+        </trans-unit>
+        <trans-unit id="CurrencyRON" translate="yes" xml:space="preserve">
+          <source>Новый румынский лей</source>
+          <target state="new">Новый румынский лей</target>
+        </trans-unit>
+        <trans-unit id="CurrencyPLN" translate="yes" xml:space="preserve">
+          <source>Польский злотый</source>
+          <target state="new">Польский злотый</target>
+        </trans-unit>
+        <trans-unit id="CurrencyNOK" translate="yes" xml:space="preserve">
+          <source>Норвежская крона</source>
+          <target state="new">Норвежская крона</target>
+        </trans-unit>
+        <trans-unit id="CurrencyMDL" translate="yes" xml:space="preserve">
+          <source>Молдавский лей</source>
+          <target state="new">Молдавский лей</target>
+        </trans-unit>
+        <trans-unit id="CurrencyKZT" translate="yes" xml:space="preserve">
+          <source>Казахстанский тенге</source>
+          <target state="new">Казахстанский тенге</target>
+        </trans-unit>
+        <trans-unit id="CurrencyKRW" translate="yes" xml:space="preserve">
+          <source>Вон Республики Корея</source>
+          <target state="new">Вон Республики Корея</target>
+        </trans-unit>
+        <trans-unit id="CurrencyKGS" translate="yes" xml:space="preserve">
+          <source>Киргизский cом</source>
+          <target state="new">Киргизский cом</target>
+        </trans-unit>
+        <trans-unit id="CurrencyJPY" translate="yes" xml:space="preserve">
+          <source>Японская иена</source>
+          <target state="new">Японская иена</target>
+        </trans-unit>
+        <trans-unit id="CurrencyINR" translate="yes" xml:space="preserve">
+          <source>Индийская рупия</source>
+          <target state="new">Индийская рупия</target>
+        </trans-unit>
+        <trans-unit id="CurrencyHUF" translate="yes" xml:space="preserve">
+          <source>Венгерский Форинт</source>
+          <target state="new">Венгерский Форинт</target>
+        </trans-unit>
+        <trans-unit id="CurrencyGBP" translate="yes" xml:space="preserve">
+          <source>Фунт стерлингов</source>
+          <target state="new">Фунт стерлингов</target>
+        </trans-unit>
+        <trans-unit id="CurrencyEUR" translate="yes" xml:space="preserve">
+          <source>Евро</source>
+          <target state="new">Евро</target>
+        </trans-unit>
+        <trans-unit id="CurrencyDKK" translate="yes" xml:space="preserve">
+          <source>Датская крона</source>
+          <target state="new">Датская крона</target>
+        </trans-unit>
+        <trans-unit id="CurrencyCZK" translate="yes" xml:space="preserve">
+          <source>Чешская крона</source>
+          <target state="new">Чешская крона</target>
+        </trans-unit>
+        <trans-unit id="CurrencyCNY" translate="yes" xml:space="preserve">
+          <source>Китайский юань</source>
+          <target state="new">Китайский юань</target>
+        </trans-unit>
+        <trans-unit id="CurrencyCHF" translate="yes" xml:space="preserve">
+          <source>Швейцарский франк</source>
+          <target state="new">Швейцарский франк</target>
+        </trans-unit>
+        <trans-unit id="CurrencyCAD" translate="yes" xml:space="preserve">
+          <source>Канадский доллар</source>
+          <target state="new">Канадский доллар</target>
+        </trans-unit>
+        <trans-unit id="CurrencyBYR" translate="yes" xml:space="preserve">
+          <source>Белорусский рубль</source>
+          <target state="new">Белорусский рубль</target>
+        </trans-unit>
+        <trans-unit id="CurrencyBRL" translate="yes" xml:space="preserve">
+          <source>Бразильский реал</source>
+          <target state="new">Бразильский реал</target>
+        </trans-unit>
+        <trans-unit id="CurrencyBGN" translate="yes" xml:space="preserve">
+          <source>Болгарский лев</source>
+          <target state="new">Болгарский лев</target>
+        </trans-unit>
+        <trans-unit id="CurrencyAZN" translate="yes" xml:space="preserve">
+          <source>Азербайджанский манат</source>
+          <target state="new">Азербайджанский манат</target>
+        </trans-unit>
+        <trans-unit id="CurrencyAUD" translate="yes" xml:space="preserve">
+          <source>Австралийский доллар</source>
+          <target state="new">Австралийский доллар</target>
+        </trans-unit>
+        <trans-unit id="CurrencyAMD" translate="yes" xml:space="preserve">
+          <source>Армянский драм</source>
+          <target state="new">Армянский драм</target>
+        </trans-unit>
+        <trans-unit id="CurrencyUSD" translate="yes" xml:space="preserve">
+          <source>Доллар США</source>
+          <target state="new">Доллар США</target>
+        </trans-unit>
+        <trans-unit id="CurrencyZAR" translate="yes" xml:space="preserve">
+          <source>Южноафриканский рэнд</source>
+          <target state="new">Южноафриканский рэнд</target>
+        </trans-unit>
+        <trans-unit id="CurrenciesNormal" translate="yes" xml:space="preserve">
+          <source>Валюты</source>
+          <target state="new">Валюты</target>
+        </trans-unit>
+        <trans-unit id="SelectPhotoSmall" translate="yes" xml:space="preserve">
+          <source>выбрать фото</source>
+          <target state="new">выбрать фото</target>
+        </trans-unit>
+        <trans-unit id="LastBackupDateText" translate="yes" xml:space="preserve">
+          <source>Последняя синхронизация</source>
+          <target state="new">Последняя синхронизация</target>
+        </trans-unit>
+        <trans-unit id="TransparentInterface" translate="yes" xml:space="preserve">
+          <source>Прозрачный интерфейс</source>
+          <target state="new">Прозрачный интерфейс</target>
+        </trans-unit>
+        <trans-unit id="ErrorTitle" translate="yes" xml:space="preserve">
+          <source>ОШИБКА!</source>
+          <target state="new">ОШИБКА!</target>
+        </trans-unit>
+        <trans-unit id="UpdateTitleSmall" translate="yes" xml:space="preserve">
+          <source>обновление</source>
+          <target state="new">обновление</target>
+        </trans-unit>
+        <trans-unit id="UpdateMessage" translate="yes" xml:space="preserve">
+          <source>Подождите, выполняются необходимые обновления.</source>
+          <target state="new">Подождите, выполняются необходимые обновления.</target>
+        </trans-unit>
+        <trans-unit id="DatabaseMigration" translate="yes" xml:space="preserve">
+          <source>Перенос базы данных...</source>
+          <target state="new">Перенос базы данных...</target>
+        </trans-unit>
+        <trans-unit id="Saving" translate="yes" xml:space="preserve">
+          <source>Сохранение...</source>
+          <target state="new">Сохранение...</target>
+        </trans-unit>
+        <trans-unit id="Restoring" translate="yes" xml:space="preserve">
+          <source>Восстановление...</source>
+          <target state="new">Восстановление...</target>
+        </trans-unit>
+        <trans-unit id="ForgetSmall" translate="yes" xml:space="preserve">
+          <source>забыть</source>
+          <target state="new">забыть</target>
+        </trans-unit>
+        <trans-unit id="PerDayAvgSmall" translate="yes" xml:space="preserve">
+          <source>в среднем за день</source>
+          <target state="new">в среднем за день</target>
+        </trans-unit>
+        <trans-unit id="UpdatingCurrencyRates" translate="yes" xml:space="preserve">
+          <source>Обновление курсов валют...</source>
+          <target state="new">Обновление курсов валют...</target>
+        </trans-unit>
+        <trans-unit id="NumberOfDigits" translate="yes" xml:space="preserve">
+          <source>Количество знаков после запятой</source>
+          <target state="new">Количество знаков после запятой</target>
+        </trans-unit>
+        <trans-unit id="AdBlock" translate="yes" xml:space="preserve">
+          <source>Убрать рекламу</source>
+          <target state="new">Убрать рекламу</target>
+        </trans-unit>
+        <trans-unit id="ForgetMessageTitle" translate="yes" xml:space="preserve">
+          <source>ЗАБЫТЬ?</source>
+          <target state="new">ЗАБЫТЬ?</target>
+        </trans-unit>
+        <trans-unit id="ForgetMessageText" translate="yes" xml:space="preserve">
+          <source>Удалить все транзакции этого человека?</source>
+          <target state="new">Удалить все транзакции этого человека?</target>
+        </trans-unit>
+        <trans-unit id="Deleting" translate="yes" xml:space="preserve">
+          <source>Удаление...</source>
+          <target state="new">Удаление...</target>
+        </trans-unit>
+        <trans-unit id="Loading" translate="yes" xml:space="preserve">
+          <source>Загрузка...</source>
+          <target state="new">Загрузка...</target>
+        </trans-unit>
+        <trans-unit id="EmptyField" translate="yes" xml:space="preserve">
+          <source>Пустое поле.</source>
+          <target state="new">Пустое поле.</target>
+        </trans-unit>
+        <trans-unit id="ApplicationBackgroundNormal" translate="yes" xml:space="preserve">
+          <source>Фон приложения</source>
+          <target state="new">Фон приложения</target>
+        </trans-unit>
+        <trans-unit id="CurrencyXDR" translate="yes" xml:space="preserve">
+          <source>СДР</source>
+          <target state="new">СДР</target>
+        </trans-unit>
+        <trans-unit id="CurrencyUZS" translate="yes" xml:space="preserve">
+          <source>Узбекский сум</source>
+          <target state="new">Узбекский сум</target>
+        </trans-unit>
+        <trans-unit id="LostConnectionMessageText" translate="yes" xml:space="preserve">
+          <source>Не удается загрузить курсы валют.</source>
+          <target state="new">Не удается загрузить курсы валют.</target>
+        </trans-unit>
+        <trans-unit id="CurrencySmall" translate="yes" xml:space="preserve">
+          <source>валюта</source>
+          <target state="new">валюта</target>
+        </trans-unit>
+        <trans-unit id="CurrencyNormal" translate="yes" xml:space="preserve">
+          <source>Валюта</source>
+          <target state="new">Валюта</target>
+        </trans-unit>
+        <trans-unit id="CurrenciesSmall" translate="yes" xml:space="preserve">
+          <source>валюты</source>
+          <target state="new">валюты</target>
+        </trans-unit>
+        <trans-unit id="SigningIn" translate="yes" xml:space="preserve">
+          <source>Выполняется вход...</source>
+          <target state="new">Выполняется вход...</target>
+        </trans-unit>
+        <trans-unit id="SignInButton" translate="yes" xml:space="preserve">
+          <source>Войти</source>
+          <target state="new">Войти</target>
+        </trans-unit>
+        <trans-unit id="DataDeletedMessageText" translate="yes" xml:space="preserve">
+          <source>Все данные удалены.</source>
+          <target state="new">Все данные удалены.</target>
+        </trans-unit>
+        <trans-unit id="Uploading" translate="yes" xml:space="preserve">
+          <source>Отправка...</source>
+          <target state="new">Отправка...</target>
+        </trans-unit>
+        <trans-unit id="Uploaded" translate="yes" xml:space="preserve">
+          <source>Отправлено!</source>
+          <target state="new">Отправлено!</target>
+        </trans-unit>
+        <trans-unit id="SignIn" translate="yes" xml:space="preserve">
+          <source>Войдите.</source>
+          <target state="new">Войдите.</target>
+        </trans-unit>
+        <trans-unit id="RestoreWarningMessageTitle" translate="yes" xml:space="preserve">
+          <source>ВНИМАНИЕ!</source>
+          <target state="new">ВНИМАНИЕ!</target>
+        </trans-unit>
+        <trans-unit id="RestoreWarningMessageText" translate="yes" xml:space="preserve">
+          <source>Резервная копия заменит текущую базу данных. Продолжить?</source>
+          <target state="new">Резервная копия заменит текущую базу данных. Продолжить?</target>
+        </trans-unit>
+        <trans-unit id="RestoreData" translate="yes" xml:space="preserve">
+          <source>Восстановить из резервной копии</source>
+          <target state="new">Восстановить из резервной копии</target>
+        </trans-unit>
+        <trans-unit id="PayOffMessageTitle" translate="yes" xml:space="preserve">
+          <source>ПОГАСИТЬ?</source>
+          <target state="new">ПОГАСИТЬ?</target>
+        </trans-unit>
+        <trans-unit id="PayOffMessageText" translate="yes" xml:space="preserve">
+          <source>Вы действительно хотите погасить долг?</source>
+          <target state="new">Вы действительно хотите погасить долг?</target>
+        </trans-unit>
+        <trans-unit id="DownloadingFailed" translate="yes" xml:space="preserve">
+          <source>Не удается получить.</source>
+          <target state="new">Не удается получить.</target>
+        </trans-unit>
+        <trans-unit id="Downloading" translate="yes" xml:space="preserve">
+          <source>Получение...</source>
+          <target state="new">Получение...</target>
+        </trans-unit>
+        <trans-unit id="Downloaded" translate="yes" xml:space="preserve">
+          <source>Получено!</source>
+          <target state="new">Получено!</target>
+        </trans-unit>
+        <trans-unit id="DeleteData" translate="yes" xml:space="preserve">
+          <source>Удалить данные</source>
+          <target state="new">Удалить данные</target>
+        </trans-unit>
+        <trans-unit id="DeleteDataWarnindMessageTitle" translate="yes" xml:space="preserve">
+          <source>УДАЛИТЬ?</source>
+          <target state="new">УДАЛИТЬ?</target>
+        </trans-unit>
+        <trans-unit id="DeleteDataWarnindMessageText" translate="yes" xml:space="preserve">
+          <source>Вы действительно хотите удалить все данные?</source>
+          <target state="new">Вы действительно хотите удалить все данные?</target>
+        </trans-unit>
+        <trans-unit id="DataSmall" translate="yes" xml:space="preserve">
+          <source>данные</source>
+          <target state="new">данные</target>
+        </trans-unit>
+        <trans-unit id="DataNormal" translate="yes" xml:space="preserve">
+          <source>Данные</source>
+          <target state="new">Данные</target>
+        </trans-unit>
+        <trans-unit id="BackupWarningMessageTitle" translate="yes" xml:space="preserve">
+          <source>ВНИМАНИЕ!</source>
+          <target state="new">ВНИМАНИЕ!</target>
+        </trans-unit>
+        <trans-unit id="BackupWarningMessageText" translate="yes" xml:space="preserve">
+          <source>Новая резервная копия заменит старую. Продолжить?</source>
+          <target state="new">Новая резервная копия заменит старую. Продолжить?</target>
+        </trans-unit>
+        <trans-unit id="BackupData" translate="yes" xml:space="preserve">
+          <source>Создать резервную копию</source>
+          <target state="new">Создать резервную копию</target>
+        </trans-unit>
+        <trans-unit id="AuthentificationFailed" translate="yes" xml:space="preserve">
+          <source>Не удается войти.</source>
+          <target state="new">Не удается войти.</target>
+        </trans-unit>
+        <trans-unit id="AuthentificationCompleted" translate="yes" xml:space="preserve">
+          <source>Вход выполнен!</source>
+          <target state="new">Вход выполнен!</target>
+        </trans-unit>
+        <trans-unit id="GeneralSmall" translate="yes" xml:space="preserve">
+          <source>основные</source>
+          <target state="new">основные</target>
+        </trans-unit>
+        <trans-unit id="GeneralNormal" translate="yes" xml:space="preserve">
+          <source>Основные</source>
+          <target state="new">Основные</target>
+        </trans-unit>
+        <trans-unit id="ExpencesNormal" translate="yes" xml:space="preserve">
+          <source>Расходы</source>
+          <target state="new">Расходы</target>
+        </trans-unit>
+        <trans-unit id="DebtsNormal" translate="yes" xml:space="preserve">
+          <source>Долги</source>
+          <target state="new">Долги</target>
+        </trans-unit>
+        <trans-unit id="LiveTileSmall" translate="yes" xml:space="preserve">
+          <source>плитки</source>
+          <target state="new">плитки</target>
+        </trans-unit>
+        <trans-unit id="CategoriesNormal" translate="yes" xml:space="preserve">
+          <source>Категории</source>
+          <target state="new">Категории</target>
+        </trans-unit>
+        <trans-unit id="AccountsNormal" translate="yes" xml:space="preserve">
+          <source>Счета</source>
+          <target state="new">Счета</target>
+        </trans-unit>
+        <trans-unit id="WeekSmall" translate="yes" xml:space="preserve">
+          <source>неделя</source>
+          <target state="new">неделя</target>
+        </trans-unit>
+        <trans-unit id="MonthSmall" translate="yes" xml:space="preserve">
+          <source>месяц</source>
+          <target state="new">месяц</target>
+        </trans-unit>
+        <trans-unit id="RepaySmall" translate="yes" xml:space="preserve">
+          <source>погасить</source>
+          <target state="new">погасить</target>
+        </trans-unit>
+        <trans-unit id="GiveSmall" translate="yes" xml:space="preserve">
+          <source>дать</source>
+          <target state="new">дать</target>
+        </trans-unit>
+        <trans-unit id="TrialMessageText" translate="yes" xml:space="preserve">
+          <source>Данная функция недоступна в пробной версии. Купить полную версию?</source>
+          <target state="new">Данная функция недоступна в пробной версии. Купить полную версию?</target>
+        </trans-unit>
+        <trans-unit id="BackwardSmall" translate="yes" xml:space="preserve">
+          <source>назад</source>
+          <target state="new">назад</target>
+        </trans-unit>
+        <trans-unit id="AccountDeleteTransactionsMessageText" translate="yes" xml:space="preserve">
+          <source>При удалении счета будут также удалены все транзакции связанные с ним.</source>
+          <target state="new">При удалении счета будут также удалены все транзакции связанные с ним.</target>
+        </trans-unit>
+        <trans-unit id="DateFromNormal" translate="yes" xml:space="preserve">
+          <source>C</source>
+          <target state="new">C</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

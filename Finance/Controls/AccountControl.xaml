@@ -1,0 +1,88 @@
+﻿<UserControl
+    x:Class="Finance.Controls.AccountControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeMedium}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="80" d:DesignWidth="400">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid
+            Background="{Binding BackgroundColor, FallbackValue={StaticResource ElementBackgroundBrush}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock
+                Grid.Column="0"
+                VerticalAlignment="Center"
+                Text="{Binding NameText, FallbackValue=Наличные}"
+                Margin="12,6,12,6" />
+            <Grid
+                Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid
+                    Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Text="{Binding AmountValue, FallbackValue=0, Converter={StaticResource AmountConverter}}"
+                        Foreground="{Binding AmountValue, FallbackValue={StaticResource GreyAccentBrush}, Converter={StaticResource AmountColorConverter}}"
+                        Margin="12,6,12,0" />
+                    <TextBlock
+                        Grid.Column="1"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Text="{Binding CurrencyText, FallbackValue=RUB}"
+                        Foreground="{Binding AmountValue, FallbackValue={StaticResource GreyAccentBrush}, Converter={StaticResource AmountColorConverter}}"
+                        Margin="0,6,12,0" />
+                </Grid>
+                <Grid
+                    Grid.Row="1"
+                    HorizontalAlignment="Right"
+                    Visibility="{Binding CurrencyText, Converter={StaticResource CurrencyVisibilityConverter}}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Text="{Binding SmallAmountValue, FallbackValue=0, Converter={StaticResource AmountConverter}}"
+                        Foreground="{Binding SmallAmountValue, FallbackValue={StaticResource GreyAccentBrush}, Converter={StaticResource AmountColorConverter}}"
+                        FontSize="{StaticResource PhoneFontSizeNormal}"
+                        Margin="12,0,12,6" />
+                    <TextBlock
+                        Grid.Column="1"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Text="{Binding SmallCurrencyText, FallbackValue=RUB}"
+                        Foreground="{Binding SmallAmountValue, FallbackValue={StaticResource GreyAccentBrush}, Converter={StaticResource AmountColorConverter}}"
+                        FontSize="{StaticResource PhoneFontSizeNormal}"
+                        Margin="0,0,12,6" />
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid
+            Grid.Row="1"
+            Background="{Binding AmountValue, FallbackValue={StaticResource GreyAccentBrush}, Converter={StaticResource AmountColorConverter}}"
+            Height="3" />
+    </Grid>
+</UserControl>

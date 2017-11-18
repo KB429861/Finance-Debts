@@ -1,0 +1,119 @@
+﻿<common:BasePage
+    x:Class="Finance.CategoriesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:rlb="clr-namespace:ReorderListBox;assembly=ReorderListBox"
+    xmlns:common="clr-namespace:Finance.Common"
+    xmlns:controls="clr-namespace:Finance.Controls"
+    xmlns:model="clr-namespace:Finance.Database.Model"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <Grid>
+        <phone:Pivot
+            x:Name="CategoriesPivot">
+            <phone:Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock
+                        Text="{Binding}"
+                        FontSize="{StaticResource PhoneFontSizeMedium}"
+                        FontFamily="{StaticResource PhoneFontFamilySemiBold}" />
+                </DataTemplate>
+            </phone:Pivot.HeaderTemplate>
+            <phone:PivotItem
+                Header="{Binding LocalizedResources.IncomesSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}, Converter={StaticResource CaseConverter}, ConverterParameter=Upper}">
+                <Grid>
+                    <TextBlock
+                        x:Name="NoIncomesDataTextBlock"
+                        Text="{Binding LocalizedResources.NoDataMessage, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Style="{StaticResource PhoneTextSubtleStyle}" />
+                    <rlb:ReorderListBox
+                        x:Name="IncomeCategoriesListBox"
+                        IsReorderEnabled="True">
+                        <rlb:ReorderListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </rlb:ReorderListBox.ItemContainerStyle>
+                        <rlb:ReorderListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <controls:CategoryControl
+                                        Margin="12,6,12,6"
+                                        BackgroundColor="{StaticResource ElementBackgroundBrush}"
+                                        NameText="{Binding Name}"
+                                        AmountValue="1"
+                                        AmountVisibility="Collapsed"
+                                        d:DataContext="{d:DesignInstance model:Category}" />
+                                    <toolkit:ContextMenuService.ContextMenu>
+                                        <toolkit:ContextMenu>
+                                            <toolkit:MenuItem
+                                                Header="{Binding LocalizedResources.EditSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                                Click="EditButton_Click" />
+                                            <toolkit:MenuItem
+                                                Header="{Binding LocalizedResources.DeleteSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                                Click="DeleteButton_Click" />
+                                        </toolkit:ContextMenu>
+                                    </toolkit:ContextMenuService.ContextMenu>
+                                </Grid>
+                            </DataTemplate>
+                        </rlb:ReorderListBox.ItemTemplate>
+                    </rlb:ReorderListBox>
+                </Grid>
+            </phone:PivotItem>
+
+            <phone:PivotItem
+                Header="{Binding LocalizedResources.ExpencesSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}, Converter={StaticResource CaseConverter}, ConverterParameter=Upper}">
+                <Grid>
+                    <TextBlock
+                        x:Name="NoExpenceDataTextBlock"
+                        Text="{Binding LocalizedResources.NoDataMessage, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        Style="{StaticResource PhoneTextSubtleStyle}" />
+                    <rlb:ReorderListBox
+                        x:Name="ExpenceCategoriesListBox"
+                        IsReorderEnabled="True">
+                        <rlb:ReorderListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                            </Style>
+                        </rlb:ReorderListBox.ItemContainerStyle>
+                        <rlb:ReorderListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <controls:CategoryControl
+                                        Margin="12,6,12,6"
+                                        BackgroundColor="{StaticResource ElementBackgroundBrush}"
+                                        NameText="{Binding Name}"
+                                        AmountValue="-1"
+                                        AmountVisibility="Collapsed"
+                                        d:DataContext="{d:DesignInstance model:Category}" />
+                                    <toolkit:ContextMenuService.ContextMenu>
+                                        <toolkit:ContextMenu>
+                                            <toolkit:MenuItem
+                                                Header="{Binding LocalizedResources.EditSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                                Click="EditButton_Click" />
+                                            <toolkit:MenuItem
+                                                Header="{Binding LocalizedResources.DeleteSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                                Click="DeleteButton_Click" />
+                                        </toolkit:ContextMenu>
+                                    </toolkit:ContextMenuService.ContextMenu>
+                                </Grid>
+                            </DataTemplate>
+                        </rlb:ReorderListBox.ItemTemplate>
+                    </rlb:ReorderListBox>
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</common:BasePage>

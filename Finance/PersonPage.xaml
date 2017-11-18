@@ -1,0 +1,112 @@
+﻿<common:BasePage
+    x:Class="Finance.PersonPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:common="clr-namespace:Finance.Common"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="{StaticResource PhoneChromeColor}"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <Grid
+        Background="{StaticResource PhoneChromeBrush}">
+        <phone:Pivot>
+            <phone:Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock
+                        Text="{Binding}"
+                        FontSize="{StaticResource PhoneFontSizeMedium}"
+                        FontFamily="{StaticResource PhoneFontFamilySemiBold}" />
+                </DataTemplate>
+            </phone:Pivot.HeaderTemplate>
+            <phone:PivotItem
+                Header="{Binding LocalizedResources.PersonSmall, Mode=OneWay, Source={StaticResource LocalizedStrings}, Converter={StaticResource CaseConverter}, ConverterParameter=Upper}">
+                <ListBox>
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel
+                            Grid.Column="0">
+                            <TextBlock
+                                Text="{Binding LocalizedResources.PersonNameNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                Style="{StaticResource PhoneTextSubtleStyle}" />
+                            <TextBox
+                                x:Name="NameTextBox"
+                                InputScope="Text"
+                                KeyDown="NameTextBox_OnKeyDown" />
+                        </StackPanel>
+                        <Button
+                            Grid.Column="1"
+                            Width="72"
+                            Height="72"
+                            VerticalAlignment="Bottom"
+                            Style="{StaticResource RoundButtonStyle}"
+                            Click="ContactButton_OnClick">
+                            <Rectangle
+                                Fill="{StaticResource PhoneForegroundBrush}"
+                                Width="40"
+                                Height="40"
+                                Margin="-10">
+                                <Rectangle.OpacityMask>
+                                    <ImageBrush
+                                        ImageSource="/Assets/AppBar/feature.search.png" />
+                                </Rectangle.OpacityMask>
+                            </Rectangle>
+                        </Button>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel
+                            Grid.Column="0">
+                            <TextBlock
+                                Text="{Binding LocalizedResources.PersonPhoneNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                                Style="{StaticResource PhoneTextSubtleStyle}" />
+                            <TextBox
+                                x:Name="PhoneTextBox"
+                                InputScope="TelephoneNumber"
+                                KeyDown="PhoneTextBox_OnKeyDown" />
+                        </StackPanel>
+                        <Button
+                            Grid.Column="1"
+                            Width="72"
+                            Height="72"
+                            VerticalAlignment="Bottom"
+                            Style="{StaticResource RoundButtonStyle}"
+                            Click="CallButton_OnClick">
+                            <Rectangle
+                                Fill="{StaticResource PhoneForegroundBrush}"
+                                Width="40"
+                                Height="40"
+                                Margin="-10">
+                                <Rectangle.OpacityMask>
+                                    <ImageBrush
+                                        ImageSource="/Assets/AppBar/feature.phone.png" />
+                                </Rectangle.OpacityMask>
+                            </Rectangle>
+                        </Button>
+                    </Grid>
+                </ListBox>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</common:BasePage>

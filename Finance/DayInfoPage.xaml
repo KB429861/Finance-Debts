@@ -1,0 +1,93 @@
+﻿<common:BasePage
+    x:Class="Finance.DayInfoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:controls="clr-namespace:Finance.Controls"
+    xmlns:model="clr-namespace:Finance.Database.Model"
+    xmlns:common="clr-namespace:Finance.Common"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <Grid>
+        <phone:Pivot>
+            <phone:Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock
+                        Text="{Binding}"
+                        FontSize="{StaticResource PhoneFontSizeMedium}"
+                        FontFamily="{StaticResource PhoneFontFamilySemiBold}" />
+                </DataTemplate>
+            </phone:Pivot.HeaderTemplate>
+            <phone:PivotItem
+                Header="{Binding LocalizedResources.DaySmall, Mode=OneWay, Source={StaticResource LocalizedStrings}, Converter={StaticResource CaseConverter}, ConverterParameter=Upper}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid
+                        Grid.Row="0">
+                        <toolkit:DatePicker
+                            x:Name="DayDatePicker"
+                            Header="{Binding LocalizedResources.DateNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}" />
+                    </Grid>
+                    <controls:TotalControl
+                        Grid.Row="1"
+                        Margin="12,0,12,12"
+                        x:Name="DayTotalControl"
+                        BackgroundColor="{StaticResource HeaderBackgroundBrush}"
+                        NameText="{Binding LocalizedResources.TotalNormal, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                        CurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}">
+                        <controls:TotalControl.Projection>
+                            <PlaneProjection RotationX="0" />
+                        </controls:TotalControl.Projection>
+                    </controls:TotalControl>
+                    <Grid
+                        Grid.Row="2"
+                        x:Name="ContentGrid"
+                        RenderTransformOrigin="0.5,0.5">
+                        <Grid.RenderTransform>
+                            <CompositeTransform TranslateX="0" />
+                        </Grid.RenderTransform>
+                        <TextBlock
+                            x:Name="NoDataTextBlock"
+                            Text="{Binding LocalizedResources.NoDataMessage, Mode=OneWay, Source={StaticResource LocalizedStrings}}"
+                            Style="{StaticResource PhoneTextSubtleStyle}" />
+                        <ListBox
+                            x:Name="DayListBox"
+                            Tap="CategoryListBox_Tap">
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="ListBoxItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <controls:CategoryControl
+                                        Margin="12,0,12,12"
+                                        BackgroundColor="{StaticResource ElementBackgroundBrush}"
+                                        NameText="{Binding Name}"
+                                        AmountValue="{Binding Amount}"
+                                        CurrencyText="{Binding CurrentCurrencyCharCode, Source={StaticResource AppSettings}}"
+                                        d:DataContext="{d:DesignInstance model:Category}" />
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
+                </Grid>
+            </phone:PivotItem>
+        </phone:Pivot>
+    </Grid>
+
+</common:BasePage>

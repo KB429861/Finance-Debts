@@ -1,0 +1,46 @@
+﻿<UserControl
+    x:Class="Finance.Controls.SettingControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeLarge}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="60" d:DesignWidth="400">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid
+            Background="{Binding BackgroundColor, FallbackValue={StaticResource YellowBackgroundBrush}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Rectangle
+                Grid.Column="0"
+                Fill="{Binding AccentColor, FallbackValue={StaticResource YellowAccentBrush}}"
+                Width="50"
+                Height="50"
+                Margin="12,0,0,0">
+                <Rectangle.OpacityMask>
+                    <ImageBrush
+                        ImageSource="{Binding ImageSource, FallbackValue=/Assets/Icons/categories.png}" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
+            <TextBlock
+                Grid.Column="1"
+                VerticalAlignment="Center"
+                Text="{Binding NameText, FallbackValue=Настройки}"
+                Margin="12,6,12,6" />
+        </Grid>
+        <Grid
+            Grid.Row="1"
+            Background="{Binding AccentColor, FallbackValue={StaticResource YellowAccentBrush}}"
+            Height="3" />
+    </Grid>
+</UserControl>

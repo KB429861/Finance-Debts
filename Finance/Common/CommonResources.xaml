@@ -1,0 +1,23 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:global="clr-namespace:Finance.Global"
+    xmlns:converters="clr-namespace:Finance.Converters"
+    xmlns:settings="clr-namespace:Finance.Settings">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ColorResources.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <converters:AmountConverter x:Key="AmountConverter" />
+    <converters:AmountColorConverter x:Key="AmountColorConverter" />
+    <converters:CurrencyVisibilityConverter x:Key="CurrencyVisibilityConverter" />
+    <converters:CurrencyValueConverter x:Key="CurrencyValueConverter"/> 
+    <converters:CharCodeConverter x:Key="CharCodeConverter" />
+    <converters:GroupConverter x:Key="GroupConverter" />
+    <converters:CaseConverter x:Key="CaseConverter"/>
+
+    <global:AppGlobal x:Key="AppGlobal" />
+    <settings:AppSettings x:Key="AppSettings" />
+
+</ResourceDictionary>

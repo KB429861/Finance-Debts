@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>ru</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>ФИНАНСЫ+ДОЛГИ</value>
+  </data>
+  <data name="AccountSmall" xml:space="preserve">
+    <value>счет</value>
+  </data>
+  <data name="AccountsSmall" xml:space="preserve">
+    <value>счета</value>
+  </data>
+  <data name="AddSmall" xml:space="preserve">
+    <value>добавить</value>
+  </data>
+  <data name="BalanceNormal" xml:space="preserve">
+    <value>Баланс</value>
+  </data>
+  <data name="CancelSmall" xml:space="preserve">
+    <value>отмена</value>
+  </data>
+  <data name="DeleteSmall" xml:space="preserve">
+    <value>удалить</value>
+  </data>
+  <data name="EditSmall" xml:space="preserve">
+    <value>изменить</value>
+  </data>
+  <data name="IncomesSmall" xml:space="preserve">
+    <value>доходы</value>
+  </data>
+  <data name="NameNormal" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="SaveSmall" xml:space="preserve">
+    <value>сохранить</value>
+  </data>
+  <data name="AccountDeleteMessageText" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить счет?</value>
+  </data>
+  <data name="AccountDeleteMessageTitle" xml:space="preserve">
+    <value>УДАЛЯТЬ?</value>
+  </data>
+  <data name="AccountNameEmptyMessageText" xml:space="preserve">
+    <value>Введите название счета.</value>
+  </data>
+  <data name="AccountNameEmptyMessageTitle" xml:space="preserve">
+    <value>НАЗВАНИЕ?</value>
+  </data>
+  <data name="AccountNormal" xml:space="preserve">
+    <value>Счет</value>
+  </data>
+  <data name="AmountEmptyMessageText" xml:space="preserve">
+    <value>Введите сумму.</value>
+  </data>
+  <data name="AmountEmptyMessageTitle" xml:space="preserve">
+    <value>СКОЛЬКО?</value>
+  </data>
+  <data name="AmountIncorrectMessageText" xml:space="preserve">
+    <value>Неправильный формат суммы.</value>
+  </data>
+  <data name="AmountIncorrectMessageTitle" xml:space="preserve">
+    <value>СКОЛЬКО?</value>
+  </data>
+  <data name="AmountNormal" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="CategoriesSmall" xml:space="preserve">
+    <value>категории</value>
+  </data>
+  <data name="CategoryNormal" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="CategorySmall" xml:space="preserve">
+    <value>категория</value>
+  </data>
+  <data name="ChooseSmall" xml:space="preserve">
+    <value>выбрать</value>
+  </data>
+  <data name="DateNormal" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="DebtSmall" xml:space="preserve">
+    <value>долг</value>
+  </data>
+  <data name="DebtsSmall" xml:space="preserve">
+    <value>долги</value>
+  </data>
+  <data name="DescriptionNormal" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="ExpenceNormal" xml:space="preserve">
+    <value>Расход</value>
+  </data>
+  <data name="ExpencesSmall" xml:space="preserve">
+    <value>расходы</value>
+  </data>
+  <data name="FromNormal" xml:space="preserve">
+    <value>Откуда</value>
+  </data>
+  <data name="GiveNormal" xml:space="preserve">
+    <value>Дать</value>
+  </data>
+  <data name="IncomeNormal" xml:space="preserve">
+    <value>Доход</value>
+  </data>
+  <data name="PeopleSmall" xml:space="preserve">
+    <value>люди</value>
+  </data>
+  <data name="PersonNameNormal" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="PersonNormal" xml:space="preserve">
+    <value>Человек</value>
+  </data>
+  <data name="PersonSmall" xml:space="preserve">
+    <value>человек</value>
+  </data>
+  <data name="SettingsSmall" xml:space="preserve">
+    <value>настройки</value>
+  </data>
+  <data name="TakeNormal" xml:space="preserve">
+    <value>Взять</value>
+  </data>
+  <data name="TimeNormal" xml:space="preserve">
+    <value>Время</value>
+  </data>
+  <data name="ToNormal" xml:space="preserve">
+    <value>Куда</value>
+  </data>
+  <data name="TransactionSmall" xml:space="preserve">
+    <value>транзакция</value>
+  </data>
+  <data name="TransferSmall" xml:space="preserve">
+    <value>перевод</value>
+  </data>
+  <data name="TypeNormal" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="AccountEmptyMessageText" xml:space="preserve">
+    <value>Выберите счет.</value>
+  </data>
+  <data name="AccountEmptyMessageTitle" xml:space="preserve">
+    <value>СЧЕТ?</value>
+  </data>
+  <data name="CashbackMessageText" xml:space="preserve">
+    <value>Осуществить возврат денег на соответсвующие счета?</value>
+  </data>
+  <data name="CashbackMessageTitle" xml:space="preserve">
+    <value>ДЕНЬГИ?</value>
+  </data>
+  <data name="CategoryDeleteMessageText" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить категорию?</value>
+  </data>
+  <data name="CategoryDeleteMessageTitle" xml:space="preserve">
+    <value>УДАЛЯТЬ?</value>
+  </data>
+  <data name="CategoryDeleteTransactionsMessageText" xml:space="preserve">
+    <value>При удалении категории будут также удалены все транзакции этой категории.</value>
+  </data>
+  <data name="CategoryDeleteTransactionsMessageTitle" xml:space="preserve">
+    <value>ВАЖНО!</value>
+  </data>
+  <data name="CategoryNameEmptyMessageText" xml:space="preserve">
+    <value>Введите название категории.</value>
+  </data>
+  <data name="CategoryNameEmptyMessageTitle" xml:space="preserve">
+    <value>НАЗВАНИЕ?</value>
+  </data>
+  <data name="PersonEmptyMessageText" xml:space="preserve">
+    <value>Выберите человека.</value>
+  </data>
+  <data name="PersonEmptyMessageTitle" xml:space="preserve">
+    <value>КТО?</value>
+  </data>
+  <data name="TransactionsDeleteMessageText" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить транзакции?</value>
+  </data>
+  <data name="TransactionsDeleteMessageTitle" xml:space="preserve">
+    <value>УДАЛЯТЬ?</value>
+  </data>
+  <data name="CategoryEmptyMessageText" xml:space="preserve">
+    <value>Выберите категорию.</value>
+  </data>
+  <data name="CategoryEmptyMessageTitle" xml:space="preserve">
+    <value>КАТЕГОРИЯ?</value>
+  </data>
+  <data name="PersonDeleteMessageText" xml:space="preserve">
+    <value>Вы уверены, что хотите удалить человека?</value>
+  </data>
+  <data name="PersonDeleteMessageTitle" xml:space="preserve">
+    <value>УДАЛЯТЬ?</value>
+  </data>
+  <data name="PersonDeleteTransactionsMessageText" xml:space="preserve">
+    <value>При удалении человека будут также удалены все транзакции, связанные с ним.</value>
+  </data>
+  <data name="PersonDeleteTransactionsMessageTitle" xml:space="preserve">
+    <value>ВАЖНО!</value>
+  </data>
+  <data name="PersonNameEmptyMessageText" xml:space="preserve">
+    <value>Введите имя человека.</value>
+  </data>
+  <data name="PersonNameEmptyMessageTitle" xml:space="preserve">
+    <value>КТО?</value>
+  </data>
+  <data name="BalanceSmall" xml:space="preserve">
+    <value>баланс</value>
+  </data>
+  <data name="PerDay" xml:space="preserve">
+    <value> в день</value>
+  </data>
+  <data name="TotalNormal" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="DateFromNormal" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="DateToNormal" xml:space="preserve">
+    <value>По</value>
+  </data>
+  <data name="NoDataMessage" xml:space="preserve">
+    <value>Нет данных для отображения...</value>
+  </data>
+  <data name="StatisticsSmall" xml:space="preserve">
+    <value>статистика</value>
+  </data>
+  <data name="TodayNormal" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="AccountDeleted" xml:space="preserve">
+    <value>удален</value>
+  </data>
+  <data name="AccountDeleteTransactionsMessageText" xml:space="preserve">
+    <value>При удалении счета будут также удалены все транзакции связанные с ним.</value>
+  </data>
+  <data name="AccountDeleteTransactionsMessageTitle" xml:space="preserve">
+    <value>ВАЖНО!</value>
+  </data>
+  <data name="DeletedSmall" xml:space="preserve">
+    <value>удаленные</value>
+  </data>
+  <data name="RestoreSmall" xml:space="preserve">
+    <value>восстановить</value>
+  </data>
+  <data name="PersonPhoneNormal" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="BackwardSmall" xml:space="preserve">
+    <value>назад</value>
+  </data>
+  <data name="ForwardSmall" xml:space="preserve">
+    <value>вперед</value>
+  </data>
+  <data name="DaySmall" xml:space="preserve">
+    <value>день</value>
+  </data>
+  <data name="TrialMessageText" xml:space="preserve">
+    <value>Данная функция недоступна в пробной версии. Купить полную версию?</value>
+  </data>
+  <data name="TrialMessageTitle" xml:space="preserve">
+    <value>ДЕМО-ВЕРСИЯ</value>
+  </data>
+  <data name="AboutSmall" xml:space="preserve">
+    <value>о приложении</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>Финансы+Долги - простое и удобное приложение для управления своими доходами и расходами, а также долгами и займами.</value>
+  </data>
+  <data name="EmailNormal" xml:space="preserve">
+    <value>Почта</value>
+  </data>
+  <data name="VersionNormal" xml:space="preserve">
+    <value>Версия</value>
+  </data>
+  <data name="GiveSmall" xml:space="preserve">
+    <value>дать</value>
+  </data>
+  <data name="RepaySmall" xml:space="preserve">
+    <value>погасить</value>
+  </data>
+  <data name="TakeSmall" xml:space="preserve">
+    <value>взять</value>
+  </data>
+  <data name="TodaySmall" xml:space="preserve">
+    <value>сегодня</value>
+  </data>
+  <data name="MonthSmall" xml:space="preserve">
+    <value>месяц</value>
+  </data>
+  <data name="WeekSmall" xml:space="preserve">
+    <value>неделя</value>
+  </data>
+  <data name="YearSmall" xml:space="preserve">
+    <value>год</value>
+  </data>
+  <data name="AccountsNormal" xml:space="preserve">
+    <value>Счета</value>
+  </data>
+  <data name="CategoriesNormal" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="PeopleNormal" xml:space="preserve">
+    <value>Люди</value>
+  </data>
+  <data name="LiveTileSmall" xml:space="preserve">
+    <value>плитки</value>
+  </data>
+  <data name="LiveTileNormal" xml:space="preserve">
+    <value>Плитки</value>
+  </data>
+  <data name="LikeSmall" xml:space="preserve">
+    <value>оценить</value>
+  </data>
+  <data name="DebtsNormal" xml:space="preserve">
+    <value>Долги</value>
+  </data>
+  <data name="ExpencesNormal" xml:space="preserve">
+    <value>Расходы</value>
+  </data>
+  <data name="IncomesNormal" xml:space="preserve">
+    <value>Доходы</value>
+  </data>
+  <data name="GeneralNormal" xml:space="preserve">
+    <value>Основные</value>
+  </data>
+  <data name="GeneralSmall" xml:space="preserve">
+    <value>основные</value>
+  </data>
+  <data name="LanguageNormal" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="ReloadApp" xml:space="preserve">
+    <value>Перезапустите приложение...</value>
+  </data>
+  <data name="ShowPenny" xml:space="preserve">
+    <value>Отображать копейки</value>
+  </data>
+  <data name="AuthentificationCompleted" xml:space="preserve">
+    <value>Вход выполнен!</value>
+  </data>
+  <data name="AuthentificationFailed" xml:space="preserve">
+    <value>Не удается войти.</value>
+  </data>
+  <data name="BackupData" xml:space="preserve">
+    <value>Создать резервную копию</value>
+  </data>
+  <data name="BackupWarningMessageText" xml:space="preserve">
+    <value>Новая резервная копия заменит старую. Продолжить?</value>
+  </data>
+  <data name="BackupWarningMessageTitle" xml:space="preserve">
+    <value>ВНИМАНИЕ!</value>
+  </data>
+  <data name="DataNormal" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="DataSmall" xml:space="preserve">
+    <value>данные</value>
+  </data>
+  <data name="DeleteData" xml:space="preserve">
+    <value>Удалить данные</value>
+  </data>
+  <data name="DeleteDataWarnindMessageText" xml:space="preserve">
+    <value>Вы действительно хотите удалить все данные?</value>
+  </data>
+  <data name="DeleteDataWarnindMessageTitle" xml:space="preserve">
+    <value>УДАЛИТЬ?</value>
+  </data>
+  <data name="Downloaded" xml:space="preserve">
+    <value>Получено!</value>
+  </data>
+  <data name="Downloading" xml:space="preserve">
+    <value>Получение...</value>
+  </data>
+  <data name="DownloadingFailed" xml:space="preserve">
+    <value>Не удается получить.</value>
+  </data>
+  <data name="PayOffMessageText" xml:space="preserve">
+    <value>Вы действительно хотите погасить долг?</value>
+  </data>
+  <data name="PayOffMessageTitle" xml:space="preserve">
+    <value>ПОГАСИТЬ?</value>
+  </data>
+  <data name="RestoreData" xml:space="preserve">
+    <value>Восстановить из резервной копии</value>
+  </data>
+  <data name="RestoreWarningMessageText" xml:space="preserve">
+    <value>Резервная копия заменит текущую базу данных. Продолжить?</value>
+  </data>
+  <data name="RestoreWarningMessageTitle" xml:space="preserve">
+    <value>ВНИМАНИЕ!</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Войдите.</value>
+  </data>
+  <data name="Uploaded" xml:space="preserve">
+    <value>Отправлено!</value>
+  </data>
+  <data name="Uploading" xml:space="preserve">
+    <value>Отправка...</value>
+  </data>
+  <data name="UploadingFailed" xml:space="preserve">
+    <value>Не удается отправить.</value>
+  </data>
+  <data name="ApplicationTitleNormal" xml:space="preserve">
+    <value>Финансы+Долги</value>
+  </data>
+  <data name="DataDeletedMessageText" xml:space="preserve">
+    <value>Все данные удалены.</value>
+  </data>
+  <data name="DataDeletedMEssageTitle" xml:space="preserve">
+    <value>УДАЛЕНО!</value>
+  </data>
+  <data name="TransparentTile" xml:space="preserve">
+    <value>Прозрачный тайл</value>
+  </data>
+  <data name="SignInButton" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="SigningIn" xml:space="preserve">
+    <value>Выполняется вход...</value>
+  </data>
+  <data name="SignOutButton" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="CurrenciesSmall" xml:space="preserve">
+    <value>валюты</value>
+  </data>
+  <data name="CurrencyNormal" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="CurrencySmall" xml:space="preserve">
+    <value>валюта</value>
+  </data>
+  <data name="UpdateSmall" xml:space="preserve">
+    <value>обновить</value>
+  </data>
+  <data name="CurrencyRatesSmall" xml:space="preserve">
+    <value>курсы валют</value>
+  </data>
+  <data name="CurrentCurrencyNormal" xml:space="preserve">
+    <value>Основная валюта</value>
+  </data>
+  <data name="AccountCurrencyEmptyMessageText" xml:space="preserve">
+    <value>Выберите валюту.</value>
+  </data>
+  <data name="AccountCurrencyEmptyMessageTitle" xml:space="preserve">
+    <value>ВАЛЮТА?</value>
+  </data>
+  <data name="AutoUpdateRatesNormal" xml:space="preserve">
+    <value>Автоматически обновлять курсы валют</value>
+  </data>
+  <data name="CurrencyRatesLastUpdate" xml:space="preserve">
+    <value>Последнее обновление</value>
+  </data>
+  <data name="CurrencyRUB" xml:space="preserve">
+    <value>Российский рубль</value>
+  </data>
+  <data name="LostConnectionMessageText" xml:space="preserve">
+    <value>Не удается загрузить курсы валют.</value>
+  </data>
+  <data name="LostConnectionMessageTitle" xml:space="preserve">
+    <value>ОШИБКА ПОДКЛЮЧЕНИЯ</value>
+  </data>
+  <data name="NeverSmall" xml:space="preserve">
+    <value>никогда</value>
+  </data>
+  <data name="CurrencyAMD" xml:space="preserve">
+    <value>Армянский драм</value>
+  </data>
+  <data name="CurrencyAUD" xml:space="preserve">
+    <value>Австралийский доллар</value>
+  </data>
+  <data name="CurrencyAZN" xml:space="preserve">
+    <value>Азербайджанский манат</value>
+  </data>
+  <data name="CurrencyBGN" xml:space="preserve">
+    <value>Болгарский лев</value>
+  </data>
+  <data name="CurrencyBRL" xml:space="preserve">
+    <value>Бразильский реал</value>
+  </data>
+  <data name="CurrencyBYR" xml:space="preserve">
+    <value>Белорусский рубль</value>
+  </data>
+  <data name="CurrencyCAD" xml:space="preserve">
+    <value>Канадский доллар</value>
+  </data>
+  <data name="CurrencyCHF" xml:space="preserve">
+    <value>Швейцарский франк</value>
+  </data>
+  <data name="CurrencyCNY" xml:space="preserve">
+    <value>Китайский юань</value>
+  </data>
+  <data name="CurrencyCZK" xml:space="preserve">
+    <value>Чешская крона</value>
+  </data>
+  <data name="CurrencyDKK" xml:space="preserve">
+    <value>Датская крона</value>
+  </data>
+  <data name="CurrencyEUR" xml:space="preserve">
+    <value>Евро</value>
+  </data>
+  <data name="CurrencyGBP" xml:space="preserve">
+    <value>Фунт стерлингов</value>
+  </data>
+  <data name="CurrencyHUF" xml:space="preserve">
+    <value>Венгерский Форинт</value>
+  </data>
+  <data name="CurrencyINR" xml:space="preserve">
+    <value>Индийская рупия</value>
+  </data>
+  <data name="CurrencyJPY" xml:space="preserve">
+    <value>Японская иена</value>
+  </data>
+  <data name="CurrencyKGS" xml:space="preserve">
+    <value>Киргизский cом</value>
+  </data>
+  <data name="CurrencyKRW" xml:space="preserve">
+    <value>Вон Республики Корея</value>
+  </data>
+  <data name="CurrencyKZT" xml:space="preserve">
+    <value>Казахстанский тенге</value>
+  </data>
+  <data name="CurrencyMDL" xml:space="preserve">
+    <value>Молдавский лей</value>
+  </data>
+  <data name="CurrencyNOK" xml:space="preserve">
+    <value>Норвежская крона</value>
+  </data>
+  <data name="CurrencyPLN" xml:space="preserve">
+    <value>Польский злотый</value>
+  </data>
+  <data name="CurrencyRON" xml:space="preserve">
+    <value>Новый румынский лей</value>
+  </data>
+  <data name="CurrencySEK" xml:space="preserve">
+    <value>Шведская крона</value>
+  </data>
+  <data name="CurrencySGD" xml:space="preserve">
+    <value>Сингапурский доллар</value>
+  </data>
+  <data name="CurrencyTJS" xml:space="preserve">
+    <value>Таджикский сомони</value>
+  </data>
+  <data name="CurrencyTMT" xml:space="preserve">
+    <value>Новый туркменский манат</value>
+  </data>
+  <data name="CurrencyTRY" xml:space="preserve">
+    <value>Турецкая лира</value>
+  </data>
+  <data name="CurrencyUAH" xml:space="preserve">
+    <value>Украинская гривна</value>
+  </data>
+  <data name="CurrencyUSD" xml:space="preserve">
+    <value>Доллар США</value>
+  </data>
+  <data name="CurrencyUZS" xml:space="preserve">
+    <value>Узбекский сум</value>
+  </data>
+  <data name="CurrencyXDR" xml:space="preserve">
+    <value>СДР</value>
+  </data>
+  <data name="CurrencyZAR" xml:space="preserve">
+    <value>Южноафриканский рэнд</value>
+  </data>
+  <data name="CurrenciesNormal" xml:space="preserve">
+    <value>Валюты</value>
+  </data>
+  <data name="ApplicationBackgroundNormal" xml:space="preserve">
+    <value>Фон приложения</value>
+  </data>
+  <data name="SelectPhotoSmall" xml:space="preserve">
+    <value>выбрать фото</value>
+  </data>
+  <data name="LastBackupDateText" xml:space="preserve">
+    <value>Последняя синхронизация</value>
+  </data>
+  <data name="TransparentInterface" xml:space="preserve">
+    <value>Прозрачный интерфейс</value>
+  </data>
+  <data name="EmptyField" xml:space="preserve">
+    <value>Пустое поле.</value>
+  </data>
+  <data name="ErrorTitle" xml:space="preserve">
+    <value>ОШИБКА!</value>
+  </data>
+  <data name="UpdateTitleSmall" xml:space="preserve">
+    <value>обновление</value>
+  </data>
+  <data name="UpdateMessage" xml:space="preserve">
+    <value>Подождите, выполняются необходимые обновления.</value>
+  </data>
+  <data name="DatabaseMigration" xml:space="preserve">
+    <value>Перенос базы данных...</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Загрузка...</value>
+  </data>
+  <data name="Saving" xml:space="preserve">
+    <value>Сохранение...</value>
+  </data>
+  <data name="Deleting" xml:space="preserve">
+    <value>Удаление...</value>
+  </data>
+  <data name="Restoring" xml:space="preserve">
+    <value>Восстановление...</value>
+  </data>
+  <data name="ForgetMessageText" xml:space="preserve">
+    <value>Удалить все транзакции этого человека?</value>
+  </data>
+  <data name="ForgetMessageTitle" xml:space="preserve">
+    <value>ЗАБЫТЬ?</value>
+  </data>
+  <data name="ForgetSmall" xml:space="preserve">
+    <value>забыть</value>
+  </data>
+  <data name="PerDayAvgSmall" xml:space="preserve">
+    <value>в среднем за день</value>
+  </data>
+  <data name="UpdatingCurrencyRates" xml:space="preserve">
+    <value>Обновление курсов валют...</value>
+  </data>
+  <data name="NumberOfDigits" xml:space="preserve">
+    <value>Количество знаков после запятой</value>
+  </data>
+  <data name="AdBlock" xml:space="preserve">
+    <value>Убрать рекламу</value>
+  </data>
+</root>
